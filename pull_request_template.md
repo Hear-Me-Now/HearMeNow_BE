@@ -1,4 +1,4 @@
-## Endpoint Affected
+## Query/Mutation Effected
 
 ## Describe Changes
 
