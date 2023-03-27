@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 2023_03_22_210114) do
   create_table "leaderboards", force: :cascade do |t|
     t.string "name"
     t.integer "score"
+    t.string "category"
+    t.string "difficulty"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
