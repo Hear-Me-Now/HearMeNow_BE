@@ -9,6 +9,8 @@ require 'rspec/rails'
 require 'simplecov'
 SimpleCov.start
 
+require 'graphql_helper'
+
 require 'vcr'
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr'
@@ -48,6 +50,8 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+
+  config.include GraphqlHelper
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false

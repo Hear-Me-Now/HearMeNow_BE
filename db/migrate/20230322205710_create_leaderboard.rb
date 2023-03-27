@@ -3,6 +3,8 @@ class CreateLeaderboard < ActiveRecord::Migration[5.2]
     create_table :leaderboards do |t|
       t.string :name
       t.integer :score
+      t.string :category
+      t.string :difficulty
       t.timestamps
     end
   end
