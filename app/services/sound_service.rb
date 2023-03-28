@@ -7,7 +7,7 @@ class SoundService
   end
  
   def self.get_sound_data(id)
-    response = conn.get("/apiv2/sounds/#{id}")
+    response = conn.get("/apiv2/sounds/#{id}/")
     JSON.parse(response.body, symbolize_names: true)
   end
 end
