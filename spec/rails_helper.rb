@@ -16,6 +16,7 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/vcr'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.filter_sensitive_data('<FREE_SOUND_KEY>') { ENV['FREE_SOUND_KEY'] }
 end
 
 Shoulda::Matchers.configure do |config|
