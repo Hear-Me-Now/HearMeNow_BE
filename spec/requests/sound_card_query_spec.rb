@@ -34,6 +34,51 @@ RSpec.describe 'Sound Card Requests', type: :request do
 
       expect(data.length).to eq(24)
     end
+
+
+    it 'returns 8 sound cards if no limit is given', :vcr do
+      response = gql <<-GQL
+        query soundCardsByCategoryQuerySpec {
+          soundCardsByCategory(category: "instruments") {
+            id
+            category
+            correctAnswer
+            link
+            wrongAnswers
+          }
+        }
+      GQL
+
+      data = response.dig('data', 'soundCardsByCategory')
+
+      expect(data.length).to eq(8)
+    end
+  end
+
+  describe 'Sound Card Sad Paths' do
+    it 'returns an empty array if a nonexistent category is given', :vcr do
+      data = query_sound_cards_by_category('people', 8)
+
+      expect(data).to eq([])
+    end
+
+    it 'returns an error if no category is given', :vcr do
+      response = gql <<-GQL
+        query soundCardsByCategoryQuerySpec {
+          soundCardsByCategory(limit: 8) {
+            id
+            category
+            correctAnswer
+            link
+            wrongAnswers
+          }
+        }
+      GQL
+
+      errors = response.dig('errors')
+
+      expect(errors.first['message']).to eq("Field 'soundCardsByCategory' is missing required arguments: category")
+    end
   end
 
   private

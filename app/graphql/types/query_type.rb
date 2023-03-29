@@ -9,7 +9,7 @@ module Types
     field :leaderboards, [Types::LeaderboardType], null: false
     field :sound_cards_by_category, [Types::SoundCardType], null: false do
       argument :category, String, required: true
-      argument :limit, Integer, required: true
+      argument :limit, Integer, required: true, default_value: 8
     end
     field :wrong_answers, [Types::WrongAnswerType], null: false
 
