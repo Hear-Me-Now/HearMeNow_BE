@@ -1,0 +1,421 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/515053/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3777'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":515053,"url":"https://freesound.org/people/Nox_Sound/sounds/515053/","name":"Animal_Cicada_Solo_Loop.wav","tags":["loop","animal","cicada","single","H5","zoom","cicadas","insects","nature","field-recording","summer"],"description":"Sound
+        of a single cicada (Close Recording // Loop).\n\nGears: Zoom H5\nFile: 48khz,
+        24 bit, Stereo, Wav.","geotag":null,"created":"2020-04-26T12:33:01","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"wav","channels":2,"filesize":1708708,"bitrate":0,"bitdepth":24,"duration":5.93046,"samplerate":48000.0,"username":"Nox_Sound","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/515053/download/","bookmark":"https://freesound.org/apiv2/sounds/515053/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/515/515053_9250976-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/515/515053_9250976-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/515/515053_9250976-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/515/515053_9250976-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/515/515053_9250976_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/515/515053_9250976_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/515/515053_9250976_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/515/515053_9250976_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/515/515053_9250976_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/515/515053_9250976_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/515/515053_9250976_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/515/515053_9250976_spec_bw_L.jpg"},"num_downloads":133,"avg_rating":4.555555555555555,"num_ratings":9,"rate":"https://freesound.org/apiv2/sounds/515053/rate/","comments":"https://freesound.org/apiv2/sounds/515053/comments/","num_comments":1,"comment":"https://freesound.org/apiv2/sounds/515053/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/515053/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/515/515053-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/515053/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":4.843744449532849,"ac_tempo":126,"ac_reverb":false,"ac_warmth":30.405794320680002,"ac_hardness":65.79382943142551,"ac_loudness":-16.38134765625,"ac_tonality":"D
+        minor","ac_boominess":0.0,"ac_note_midi":102,"ac_note_name":"F#7","ac_roughness":75.54371732722906,"ac_sharpness":80.78974466634665,"ac_brightness":82.27599360122169,"ac_single_event":true,"ac_dynamic_range":0.2978973388671875,"ac_note_frequency":2909.184326171875,"ac_log_attack_time":-0.4088848829269409,"ac_note_confidence":0.43578869104385376,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5097132921218872,"ac_tonality_confidence":0.25638699531555176},"analyzers_output":{"ac_loop":false,"ac_depth":4.843744449532849,"ac_tempo":126,"ac_reverb":false,"ac_warmth":30.405794320680002,"ac_hardness":65.79382943142551,"ac_loudness":-16.38134765625,"ac_tonality":"D
+        minor","ac_boominess":0.0,"ac_note_midi":102,"ac_note_name":"F#7","ac_roughness":75.54371732722906,"ac_sharpness":80.78974466634665,"ac_brightness":82.27599360122169,"ac_single_event":true,"ac_dynamic_range":0.2978973388671875,"ac_note_frequency":2909.184326171875,"ac_log_attack_time":-0.4088848829269409,"ac_note_confidence":0.43578869104385376,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5097132921218872,"ac_tonality_confidence":0.25638699531555176,"yamnet_class":["Wild
+        animals"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:25 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/664882/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3942'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":664882,"url":"https://freesound.org/people/Geoff-Bremner-Audio/sounds/664882/","name":"beast_grumble_monster_grunt_2.mp3","tags":["creature","ghoul","zombie","unique","snort","snarl","beast","grumble","horror","roar","undead","vile","monster","grunt","growl","scary","ghost"],"description":"This
+        is my dog. She is actually very content and happy in these sounds. Can be
+        used to make a beast or creature, or for whatever you want :).\nSee my profile
+        for more of her.","geotag":null,"created":"2022-12-15T02:37:28","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"mp3","channels":1,"filesize":27792,"bitrate":122,"bitdepth":0,"duration":1.82003,"samplerate":32000.0,"username":"Geoff-Bremner-Audio","pack":"https://freesound.org/apiv2/packs/37135/","pack_name":null,"download":"https://freesound.org/apiv2/sounds/664882/download/","bookmark":"https://freesound.org/apiv2/sounds/664882/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/664/664882_10643461-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/664/664882_10643461-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/664/664882_10643461-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/664/664882_10643461-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/664/664882_10643461_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/664/664882_10643461_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/664/664882_10643461_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/664/664882_10643461_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/664/664882_10643461_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/664/664882_10643461_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/664/664882_10643461_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/664/664882_10643461_spec_bw_L.jpg"},"num_downloads":9,"avg_rating":0.0,"num_ratings":0,"rate":"https://freesound.org/apiv2/sounds/664882/rate/","comments":"https://freesound.org/apiv2/sounds/664882/comments/","num_comments":2,"comment":"https://freesound.org/apiv2/sounds/664882/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/664882/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/664/664882-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/664882/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":66.55682537449236,"ac_tempo":155,"ac_reverb":true,"ac_warmth":44.44336536204857,"ac_hardness":59.567590755684336,"ac_loudness":-21.01662254333496,"ac_tonality":"F
+        minor","ac_boominess":42.66400915808632,"ac_note_midi":40,"ac_note_name":"E2","ac_roughness":47.75428764891068,"ac_sharpness":55.0849150711527,"ac_brightness":58.805274459376285,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":82.07751083374023,"ac_log_attack_time":-0.7573279142379761,"ac_note_confidence":0.36373716592788696,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.6612764000892639,"ac_tonality_confidence":0.6611951589584351},"analyzers_output":{"ac_loop":false,"ac_depth":66.55682537449236,"ac_tempo":155,"ac_reverb":true,"ac_warmth":44.44336536204857,"ac_hardness":59.567590755684336,"ac_loudness":-21.01662254333496,"ac_tonality":"F
+        minor","ac_boominess":42.66400915808632,"ac_note_midi":40,"ac_note_name":"E2","ac_roughness":47.75428764891068,"ac_sharpness":55.0849150711527,"ac_brightness":58.805274459376285,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":82.07751083374023,"ac_log_attack_time":-0.7573279142379761,"ac_note_confidence":0.36373716592788696,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.6612764000892639,"ac_tonality_confidence":0.6611951589584351,"yamnet_class":["Breathing"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:26 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/479235/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3845'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":479235,"url":"https://freesound.org/people/ohhaaaaiuser/sounds/479235/","name":"Goats.mp3","tags":["animal","goat","sheep"],"description":"Sounds
+        of two adult goats. Most of the first sound''s background noise is removed,
+        but I couldn''t properly get the people talking in the background removed
+        in the second sound.","geotag":null,"created":"2019-08-12T21:21:37","license":"https://creativecommons.org/licenses/by/4.0/","type":"mp3","channels":2,"filesize":157987,"bitrate":192,"bitdepth":0,"duration":6.51585,"samplerate":44100.0,"username":"ohhaaaaiuser","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/479235/download/","bookmark":"https://freesound.org/apiv2/sounds/479235/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/479/479235_10157164-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/479/479235_10157164-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/479/479235_10157164-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/479/479235_10157164-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/479/479235_10157164_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/479/479235_10157164_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/479/479235_10157164_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/479/479235_10157164_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/479/479235_10157164_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/479/479235_10157164_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/479/479235_10157164_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/479/479235_10157164_spec_bw_L.jpg"},"num_downloads":301,"avg_rating":2.0,"num_ratings":1,"rate":"https://freesound.org/apiv2/sounds/479235/rate/","comments":"https://freesound.org/apiv2/sounds/479235/comments/","num_comments":0,"comment":"https://freesound.org/apiv2/sounds/479235/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/479235/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/479/479235-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/479235/analysis/","ac_analysis":{"ac_loop":true,"ac_depth":26.376923276739547,"ac_tempo":83,"ac_reverb":true,"ac_warmth":31.919615200324987,"ac_hardness":55.75470273338078,"ac_loudness":-22.95426368713379,"ac_tonality":"G#
+        minor","ac_boominess":3.7425484647231215,"ac_note_midi":121,"ac_note_name":"C#9","ac_roughness":56.216071021960836,"ac_sharpness":62.08389936447571,"ac_brightness":75.27981054066353,"ac_single_event":false,"ac_dynamic_range":5.874275207519531,"ac_note_frequency":8730.49560546875,"ac_log_attack_time":0.5539352893829346,"ac_note_confidence":0.5837963819503784,"ac_tempo_confidence":0.9728352427482605,"ac_temporal_centroid":0.5077500939369202,"ac_tonality_confidence":0.5890836715698242},"analyzers_output":{"ac_loop":true,"ac_depth":26.376923276739547,"ac_tempo":83,"ac_reverb":true,"ac_warmth":31.919615200324987,"ac_hardness":55.75470273338078,"ac_loudness":-22.95426368713379,"ac_tonality":"G#
+        minor","ac_boominess":3.7425484647231215,"ac_note_midi":121,"ac_note_name":"C#9","ac_roughness":56.216071021960836,"ac_sharpness":62.08389936447571,"ac_brightness":75.27981054066353,"ac_single_event":false,"ac_dynamic_range":5.874275207519531,"ac_note_frequency":8730.49560546875,"ac_log_attack_time":0.5539352893829346,"ac_note_confidence":0.5837963819503784,"ac_tempo_confidence":0.9728352427482605,"ac_temporal_centroid":0.5077500939369202,"ac_tonality_confidence":0.5890836715698242,"yamnet_class":["Livestock,
+        farm animals, working animals","Sheep"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:27 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/139875/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3652'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":139875,"url":"https://freesound.org/people/y89312/sounds/139875/","name":"44.wav","tags":["elephant","animal","voice"],"description":"elephant
+        voice 44","geotag":null,"created":"2011-12-28T15:15:48","license":"http://creativecommons.org/licenses/by/3.0/","type":"wav","channels":1,"filesize":45494,"bitrate":0,"bitdepth":16,"duration":1.42031,"samplerate":16000.0,"username":"y89312","pack":"https://freesound.org/apiv2/packs/8695/","pack_name":null,"download":"https://freesound.org/apiv2/sounds/139875/download/","bookmark":"https://freesound.org/apiv2/sounds/139875/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/139/139875_2535085-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/139/139875_2535085-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/139/139875_2535085-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/139/139875_2535085-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/139/139875_2535085_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/139/139875_2535085_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/139/139875_2535085_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/139/139875_2535085_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/139/139875_2535085_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/139/139875_2535085_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/139/139875_2535085_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/139/139875_2535085_spec_bw_L.jpg"},"num_downloads":31372,"avg_rating":4.064516129032258,"num_ratings":124,"rate":"https://freesound.org/apiv2/sounds/139875/rate/","comments":"https://freesound.org/apiv2/sounds/139875/comments/","num_comments":45,"comment":"https://freesound.org/apiv2/sounds/139875/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/139875/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/139/139875-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/139875/analysis/","ac_analysis":{"ac_loop":true,"ac_depth":32.91872472394406,"ac_tempo":87,"ac_reverb":false,"ac_warmth":39.374971238682555,"ac_hardness":49.654550404510246,"ac_loudness":-10.793375968933105,"ac_tonality":"B
+        major","ac_boominess":17.006227781107373,"ac_note_midi":71,"ac_note_name":"B4","ac_roughness":63.759581143818984,"ac_sharpness":46.792014581043944,"ac_brightness":64.04585355110919,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":498.5444641113281,"ac_log_attack_time":-0.31607937812805176,"ac_note_confidence":0.7173818349838257,"ac_tempo_confidence":0.9573220014572144,"ac_temporal_centroid":0.49543991684913635,"ac_tonality_confidence":0.5707213878631592},"analyzers_output":{"ac_loop":true,"ac_depth":32.91872472394406,"ac_tempo":87,"ac_reverb":false,"ac_warmth":39.374971238682555,"ac_hardness":49.654550404510246,"ac_loudness":-10.793375968933105,"ac_tonality":"B
+        major","ac_boominess":17.006227781107373,"ac_note_midi":71,"ac_note_name":"B4","ac_roughness":63.759581143818984,"ac_sharpness":46.792014581043944,"ac_brightness":64.04585355110919,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":498.5444641113281,"ac_log_attack_time":-0.31607937812805176,"ac_note_confidence":0.7173818349838257,"ac_tempo_confidence":0.9573220014572144,"ac_temporal_centroid":0.49543991684913635,"ac_tonality_confidence":0.5707213878631592,"yamnet_class":["Siren"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:27 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/592786/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3715'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":592786,"url":"https://freesound.org/people/hiltonproductions/sounds/592786/","name":"Turkey
+        Gobble.mp3","tags":["creature","animal","animals","sounds","farm"],"description":"This
+        is from a real Turkey that I recorded at a farm. Please be sure to comment
+        and review after download if you like these.","geotag":null,"created":"2021-10-19T19:57:57","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"mp3","channels":1,"filesize":38660,"bitrate":343,"bitdepth":0,"duration":0.899773,"samplerate":44100.0,"username":"hiltonproductions","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/592786/download/","bookmark":"https://freesound.org/apiv2/sounds/592786/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/592/592786_11919037-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/592/592786_11919037-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/592/592786_11919037-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/592/592786_11919037-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/592/592786_11919037_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/592/592786_11919037_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/592/592786_11919037_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/592/592786_11919037_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/592/592786_11919037_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/592/592786_11919037_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/592/592786_11919037_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/592/592786_11919037_spec_bw_L.jpg"},"num_downloads":109,"avg_rating":5.0,"num_ratings":3,"rate":"https://freesound.org/apiv2/sounds/592786/rate/","comments":"https://freesound.org/apiv2/sounds/592786/comments/","num_comments":0,"comment":"https://freesound.org/apiv2/sounds/592786/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/592786/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/592/592786-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/592786/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":17.33588097413498,"ac_tempo":185,"ac_reverb":false,"ac_warmth":32.77655484077169,"ac_hardness":58.445935787025405,"ac_loudness":-16.891530990600586,"ac_tonality":"E
+        minor","ac_boominess":2.987320024545344,"ac_note_midi":75,"ac_note_name":"D#5","ac_roughness":56.39921232416054,"ac_sharpness":57.34675767016168,"ac_brightness":70.32792826818972,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":629.5350952148438,"ac_log_attack_time":-0.5019240379333496,"ac_note_confidence":0.6727690994739532,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5952032208442688,"ac_tonality_confidence":0.39564165472984314},"analyzers_output":{"ac_loop":false,"ac_depth":17.33588097413498,"ac_tempo":185,"ac_reverb":false,"ac_warmth":32.77655484077169,"ac_hardness":58.445935787025405,"ac_loudness":-16.891530990600586,"ac_tonality":"E
+        minor","ac_boominess":2.987320024545344,"ac_note_midi":75,"ac_note_name":"D#5","ac_roughness":56.39921232416054,"ac_sharpness":57.34675767016168,"ac_brightness":70.32792826818972,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":629.5350952148438,"ac_log_attack_time":-0.5019240379333496,"ac_note_confidence":0.6727690994739532,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5952032208442688,"ac_tonality_confidence":0.39564165472984314},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:28 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/667579/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3795'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":667579,"url":"https://freesound.org/people/Yoyodaman234/sounds/667579/","name":"Bat
+        Screech","tags":["Scream","Alien","Screech","Cars","Animals","Bat"],"description":"Recording
+        of a bat screeching in a nearby tree late at night; faint cars can be heard
+        in the distance.\n\nRecorded using a BP4025 microphone and ZOOM F6 floating-point
+        recorder.","geotag":null,"created":"2023-01-01T06:12:03","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"flac","channels":2,"filesize":2598529,"bitrate":0,"bitdepth":24,"duration":7.96517,"samplerate":96000.0,"username":"Yoyodaman234","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/667579/download/","bookmark":"https://freesound.org/apiv2/sounds/667579/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/667/667579_2792951-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/667/667579_2792951-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/667/667579_2792951-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/667/667579_2792951-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/667/667579_2792951_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/667/667579_2792951_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/667/667579_2792951_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/667/667579_2792951_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/667/667579_2792951_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/667/667579_2792951_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/667/667579_2792951_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/667/667579_2792951_spec_bw_L.jpg"},"num_downloads":44,"avg_rating":0.0,"num_ratings":0,"rate":"https://freesound.org/apiv2/sounds/667579/rate/","comments":"https://freesound.org/apiv2/sounds/667579/comments/","num_comments":0,"comment":"https://freesound.org/apiv2/sounds/667579/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/667579/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/667/667579-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/667579/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":43.311714017586475,"ac_tempo":96,"ac_reverb":false,"ac_warmth":38.542065012097886,"ac_hardness":50.32323597637259,"ac_loudness":-29.58365249633789,"ac_tonality":"A#
+        minor","ac_boominess":18.01596454104201,"ac_note_midi":36,"ac_note_name":"C2","ac_roughness":59.79106066026079,"ac_sharpness":62.90936666114588,"ac_brightness":76.48519251992357,"ac_single_event":false,"ac_dynamic_range":14.985565185546875,"ac_note_frequency":65.89842987060547,"ac_log_attack_time":0.504136323928833,"ac_note_confidence":0.413507878780365,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5354933142662048,"ac_tonality_confidence":0.28876519203186035},"analyzers_output":{"ac_loop":false,"ac_depth":43.311714017586475,"ac_tempo":96,"ac_reverb":false,"ac_warmth":38.542065012097886,"ac_hardness":50.32323597637259,"ac_loudness":-29.58365249633789,"ac_tonality":"A#
+        minor","ac_boominess":18.01596454104201,"ac_note_midi":36,"ac_note_name":"C2","ac_roughness":59.79106066026079,"ac_sharpness":62.90936666114588,"ac_brightness":76.48519251992357,"ac_single_event":false,"ac_dynamic_range":14.985565185546875,"ac_note_frequency":65.89842987060547,"ac_log_attack_time":0.504136323928833,"ac_note_confidence":0.413507878780365,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.5354933142662048,"ac_tonality_confidence":0.28876519203186035,"yamnet_class":["Vehicle"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:29 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/103419/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3704'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":103419,"url":"https://freesound.org/people/confusion_music/sounds/103419/","name":"Pig
+        5 (D).wav","tags":["animal","farm","field-recording","pig"],"description":"Recorded
+        at the Great Yorkshire Show using a Sony PCM-D50. ","geotag":null,"created":"2010-08-24T17:03:16","license":"http://creativecommons.org/licenses/by/3.0/","type":"wav","channels":2,"filesize":1293936,"bitrate":0,"bitdepth":16,"duration":7.33499,"samplerate":44100.0,"username":"confusion_music","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/103419/download/","bookmark":"https://freesound.org/apiv2/sounds/103419/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/103/103419_1315438-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/103/103419_1315438-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/103/103419_1315438-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/103/103419_1315438-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/103/103419_1315438_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/103/103419_1315438_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/103/103419_1315438_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/103/103419_1315438_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/103/103419_1315438_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/103/103419_1315438_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/103/103419_1315438_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/103/103419_1315438_spec_bw_L.jpg"},"num_downloads":751,"avg_rating":4.5,"num_ratings":5,"rate":"https://freesound.org/apiv2/sounds/103419/rate/","comments":"https://freesound.org/apiv2/sounds/103419/comments/","num_comments":3,"comment":"https://freesound.org/apiv2/sounds/103419/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/103419/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/103/103419-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/103419/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":65.54352529468339,"ac_tempo":91,"ac_reverb":true,"ac_warmth":52.69596881039165,"ac_hardness":48.752546334952314,"ac_loudness":-15.486259460449219,"ac_tonality":"A#
+        major","ac_boominess":37.26549668172939,"ac_note_midi":35,"ac_note_name":"B1","ac_roughness":50.94829245872284,"ac_sharpness":41.479130576461515,"ac_brightness":60.353021130260466,"ac_single_event":false,"ac_dynamic_range":2.9708480834960938,"ac_note_frequency":60.97392654418945,"ac_log_attack_time":0.35202932357788086,"ac_note_confidence":0.4366174340248108,"ac_tempo_confidence":0.5604256153106689,"ac_temporal_centroid":0.5072285532951355,"ac_tonality_confidence":0.6313063502311707},"analyzers_output":{"ac_loop":false,"ac_depth":65.54352529468339,"ac_tempo":91,"ac_reverb":true,"ac_warmth":52.69596881039165,"ac_hardness":48.752546334952314,"ac_loudness":-15.486259460449219,"ac_tonality":"A#
+        major","ac_boominess":37.26549668172939,"ac_note_midi":35,"ac_note_name":"B1","ac_roughness":50.94829245872284,"ac_sharpness":41.479130576461515,"ac_brightness":60.353021130260466,"ac_single_event":false,"ac_dynamic_range":2.9708480834960938,"ac_note_frequency":60.97392654418945,"ac_log_attack_time":0.35202932357788086,"ac_note_confidence":0.4366174340248108,"ac_tempo_confidence":0.5604256153106689,"ac_temporal_centroid":0.5072285532951355,"ac_tonality_confidence":0.6313063502311707,"yamnet_class":["Animal"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:30 GMT
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/475043/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4095'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":475043,"url":"https://freesound.org/people/JPBILLINGSLEYJR/sounds/475043/","name":"A
+        White-eyed Vireo bird vocalizing","tags":["Vireo","Bird","singing","griseus","Alabama","birding","outdoors","listening","songbird","learning","calling","observing","nature","field-recording","vocalizing","avian","White-eyed-vireo","bird-watching"],"description":"The
+        white-eyed vireo (Vireo griseus) is a small songbird. It breeds in the southeastern
+        United States from New Jersey west to northern Missouri and south to Texas
+        and Florida, and also in eastern Mexico, northern Central America, Cuba and
+        the Bahamas.","geotag":"34.0024419863 -86.2452669383","created":"2019-06-21T05:23:38","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"mp3","channels":1,"filesize":225618,"bitrate":128,"bitdepth":0,"duration":14.0941,"samplerate":44100.0,"username":"JPBILLINGSLEYJR","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/475043/download/","bookmark":"https://freesound.org/apiv2/sounds/475043/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/475/475043_9786444-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/475/475043_9786444-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/475/475043_9786444-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/475/475043_9786444-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/475/475043_9786444_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/475/475043_9786444_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/475/475043_9786444_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/475/475043_9786444_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/475/475043_9786444_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/475/475043_9786444_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/475/475043_9786444_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/475/475043_9786444_spec_bw_L.jpg"},"num_downloads":63,"avg_rating":5.0,"num_ratings":2,"rate":"https://freesound.org/apiv2/sounds/475043/rate/","comments":"https://freesound.org/apiv2/sounds/475043/comments/","num_comments":0,"comment":"https://freesound.org/apiv2/sounds/475043/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/475043/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/475/475043-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/475043/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":32.73140450554165,"ac_tempo":156,"ac_reverb":false,"ac_warmth":26.983387289945277,"ac_hardness":54.53891584036518,"ac_loudness":-19.04825210571289,"ac_tonality":"A#
+        minor","ac_boominess":12.9604748305789,"ac_note_midi":41,"ac_note_name":"F2","ac_roughness":53.3517347325201,"ac_sharpness":63.96307799523807,"ac_brightness":76.63455630048034,"ac_single_event":false,"ac_dynamic_range":16.54005241394043,"ac_note_frequency":85.5725326538086,"ac_log_attack_time":-0.4513697028160095,"ac_note_confidence":0.27741557359695435,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.4323701858520508,"ac_tonality_confidence":0.763336181640625},"analyzers_output":{"ac_loop":false,"ac_depth":32.73140450554165,"ac_tempo":156,"ac_reverb":false,"ac_warmth":26.983387289945277,"ac_hardness":54.53891584036518,"ac_loudness":-19.04825210571289,"ac_tonality":"A#
+        minor","ac_boominess":12.9604748305789,"ac_note_midi":41,"ac_note_name":"F2","ac_roughness":53.3517347325201,"ac_sharpness":63.96307799523807,"ac_brightness":76.63455630048034,"ac_single_event":false,"ac_dynamic_range":16.54005241394043,"ac_note_frequency":85.5725326538086,"ac_log_attack_time":-0.4513697028160095,"ac_note_confidence":0.27741557359695435,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.4323701858520508,"ac_tonality_confidence":0.763336181640625,"yamnet_class":["Animal","Wild
+        animals","Bird"]},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:31 GMT
+recorded_with: VCR 6.1.0

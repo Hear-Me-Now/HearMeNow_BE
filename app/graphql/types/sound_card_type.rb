@@ -6,7 +6,7 @@ module Types
     field :correct_answer, String, null: false
     field :category, String, null: false
     field :link, String, null: false
-    field :wrong_answers, [WrongAnswerType], null: false
+    field :wrong_answers, [String], null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
@@ -16,7 +16,7 @@ module Types
   
 
     def wrong_answers
-      object.wrong_answers
+      object.wrong_answers.pluck(:answer)
     end
   end
 end
