@@ -6,9 +6,10 @@ module Types
     field :correct_answer, String, null: false
     field :category, String, null: false
     field :link, String, null: false
-    # field :wrong_answers, Array, null: false
+    field :incorrect_answers, [WrongAnswerType], null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    # argument :limit, Integer, required: true
 
 
     # Need to figure out how to limit responses before turning on the link method
@@ -17,9 +18,8 @@ module Types
     # end
   
 
-    # def wrong_answers
-    #   require 'pry'; binding.pry
-    #   object.wrong_answers
-    # end
+    def incorrect_answers
+      object.wrong_answers
+    end
   end
 end
