@@ -6,19 +6,16 @@ module Types
     field :correct_answer, String, null: false
     field :category, String, null: false
     field :link, String, null: false
-    field :incorrect_answers, [WrongAnswerType], null: false
+    field :wrong_answers, [WrongAnswerType], null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    # argument :limit, Integer, required: true
 
-
-    # Need to figure out how to limit responses before turning on the link method
-    # def link
-    #   SoundFacade.get_link(object.id)
-    # end
+    def link
+      SoundFacade.get_link(object.id)
+    end
   
 
-    def incorrect_answers
+    def wrong_answers
       object.wrong_answers
     end
   end
