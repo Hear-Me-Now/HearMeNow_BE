@@ -1,9 +1,9 @@
 # Listen Up Backend Service
 
 ## About Listen Up
-
+TODO
 ## Learning Goals
-
+TODO
 ## Setup
 This project requires Ruby 2.7.4
 
@@ -32,28 +32,27 @@ GraphQL
 
 
 ## JSON Contract
-
+TODO
 ## Queries
-
+TODO
 ## Backend Contributors
-
 ### Joe King 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/this-is-joeking) [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/king-joseph/)
-## Ryan Canton 
+### Ryan Canton 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/ryancanton)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/ryan-canton/)
-####  Samuel Cox 
+###  Samuel Cox 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/sambcox)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/samuel-bingham-cox/)
 
 ## Frontend Contributors
-####  Angie Wirth 
+###  Angie Wirth 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/awirth224)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/angela-wirth/)
-####  Matt Rowan 
+###  Matt Rowan 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/MRowan121)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/mrowan121/)
-####  Natalie Kinsaul 
+###  Natalie Kinsaul 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/nkinsaul)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/natalie-kinsaul/)
-####  Robert Aiken 
+###  Robert Aiken 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/BobAiken)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/robertsiraaiken/)
-####  Zac Walters 
+###  Zac Walters 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/zacwalters4)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/zac-walters-67951b250/)
 ## APIs Consumed
-[![freesound wave length logo](https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png)](https://freesound.org/docs/api/) 
+[<img src="https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png" alt= "freesound logo" width="50%">](https://freesound.org/docs/api/) 
