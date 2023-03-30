@@ -13,6 +13,9 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require 'csv'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -26,6 +29,21 @@ RSpec.configure do |config|
     # ...rather than:
     #     # => "be bigger than 2"
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+  end
+
+  config.before :suite do
+    WrongAnswer.destroy_all
+    SoundCard.destroy_all
+
+    CSV.foreach('./spec/data/sound_cards_test.csv', headers: true) do |row|
+      SoundCard.create!(row.to_h)
+    end
+    ActiveRecord::Base.connection.reset_pk_sequence!('sound_cards')
+
+    CSV.foreach('./spec/data/wrong_answers_test.csv', headers: true) do |row|
+      WrongAnswer.create!(row.to_h)
+    end
+    ActiveRecord::Base.connection.reset_pk_sequence!('wrong_answers')
   end
 
   # rspec-mocks config goes here. You can use an alternate test double

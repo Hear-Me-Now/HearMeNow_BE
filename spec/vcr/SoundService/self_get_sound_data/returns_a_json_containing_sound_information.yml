@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://freesound.org/apiv2/sounds/658349/?token=<FREE_SOUND_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 Mar 2023 17:27:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3661'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Origin, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      - same-origin
+      X-Mapped-Host:
+      - freesound.org
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+    body:
+      encoding: UTF-8
+      string: '{"id":658349,"url":"https://freesound.org/people/luckyleopard665/sounds/658349/","name":"Buffer
+        noise.mp3","tags":["digital","soundeffect","strange","abstract","sound-effect"],"description":"part
+        of me saying banjo in reverse with some filters, pitching, and room","geotag":null,"created":"2022-11-09T06:32:33","license":"http://creativecommons.org/publicdomain/zero/1.0/","type":"mp3","channels":2,"filesize":28211,"bitrate":355,"bitdepth":0,"duration":0.635601,"samplerate":44100.0,"username":"luckyleopard665","pack":null,"pack_name":null,"download":"https://freesound.org/apiv2/sounds/658349/download/","bookmark":"https://freesound.org/apiv2/sounds/658349/bookmark/","previews":{"preview-hq-mp3":"https://cdn.freesound.org/previews/658/658349_12274174-hq.mp3","preview-hq-ogg":"https://cdn.freesound.org/previews/658/658349_12274174-hq.ogg","preview-lq-mp3":"https://cdn.freesound.org/previews/658/658349_12274174-lq.mp3","preview-lq-ogg":"https://cdn.freesound.org/previews/658/658349_12274174-lq.ogg"},"images":{"waveform_m":"https://cdn.freesound.org/displays/658/658349_12274174_wave_M.png","waveform_l":"https://cdn.freesound.org/displays/658/658349_12274174_wave_L.png","spectral_m":"https://cdn.freesound.org/displays/658/658349_12274174_spec_M.jpg","spectral_l":"https://cdn.freesound.org/displays/658/658349_12274174_spec_L.jpg","waveform_bw_m":"https://cdn.freesound.org/displays/658/658349_12274174_wave_bw_M.png","waveform_bw_l":"https://cdn.freesound.org/displays/658/658349_12274174_wave_bw_L.png","spectral_bw_m":"https://cdn.freesound.org/displays/658/658349_12274174_spec_bw_M.jpg","spectral_bw_l":"https://cdn.freesound.org/displays/658/658349_12274174_spec_bw_L.jpg"},"num_downloads":11,"avg_rating":5.0,"num_ratings":1,"rate":"https://freesound.org/apiv2/sounds/658349/rate/","comments":"https://freesound.org/apiv2/sounds/658349/comments/","num_comments":0,"comment":"https://freesound.org/apiv2/sounds/658349/comment/","similar_sounds":"https://freesound.org/apiv2/sounds/658349/similar/","analysis":"No
+        descriptors specified. You should indicate which descriptors you want with
+        the ''descriptors'' request parameter.","analysis_frames":"https://freesound.org/data/analysis/658/658349-fs-essentia-extractor_legacy_frames.json","analysis_stats":"https://freesound.org/apiv2/sounds/658349/analysis/","ac_analysis":{"ac_loop":false,"ac_depth":59.2766567836239,"ac_tempo":0,"ac_reverb":false,"ac_warmth":53.02666031057733,"ac_hardness":50.80110698488687,"ac_loudness":-13.630743980407715,"ac_tonality":"A
+        minor","ac_boominess":35.16801138561085,"ac_note_midi":45,"ac_note_name":"A2","ac_roughness":56.433930278877156,"ac_sharpness":43.22132046502789,"ac_brightness":56.646244178191864,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":110.39537048339844,"ac_log_attack_time":-0.656236469745636,"ac_note_confidence":0.901145875453949,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.6276826858520508,"ac_tonality_confidence":0.7164238691329956},"analyzers_output":{"ac_loop":false,"ac_depth":59.2766567836239,"ac_tempo":0,"ac_reverb":false,"ac_warmth":53.02666031057733,"ac_hardness":50.80110698488687,"ac_loudness":-13.630743980407715,"ac_tonality":"A
+        minor","ac_boominess":35.16801138561085,"ac_note_midi":45,"ac_note_name":"A2","ac_roughness":56.433930278877156,"ac_sharpness":43.22132046502789,"ac_brightness":56.646244178191864,"ac_single_event":true,"ac_dynamic_range":0.0,"ac_note_frequency":110.39537048339844,"ac_log_attack_time":-0.656236469745636,"ac_note_confidence":0.901145875453949,"ac_tempo_confidence":0.0,"ac_temporal_centroid":0.6276826858520508,"ac_tonality_confidence":0.7164238691329956},"score":null}'
+  recorded_at: Wed, 29 Mar 2023 17:27:31 GMT
+recorded_with: VCR 6.1.0
