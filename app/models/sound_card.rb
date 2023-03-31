@@ -1,5 +1,7 @@
 class SoundCard < ApplicationRecord
   has_many :wrong_answers, dependent: :destroy
+  has_many :deck_cards
+  has_many :decks, through: :deck_cards
 
   validates_presence_of :correct_answer, :category
 
