@@ -8,5 +8,7 @@ RSpec.describe SoundCard do
 
   describe 'associations' do
     it { should have_many :wrong_answers}
+    it { should have_many :deck_cards }
+    it { should have_many(:decks).through(:deck_cards)}
   end
 end
