@@ -1,7 +1,17 @@
 # Listen Up Backend Service
 
+## Table of Contents
+- [About Listen Up](#about-listen-up)
+- [Learning Goals](#learning-goals)
+- [Setup](#setup)
+- [Tech Stack](#tech-stack)
+- [Database Scheme](#database-schema) 
+- [JSON Contract](#json-contract)
+- [APIs Used](#apis-used)
+- [Backend Contributors](#backend-contributors)
+- [Frontend Contributors](#frontend-contributors)
 ## About Listen Up
-TODO
+TODO Add links to deployed BE and FE and FE repo
 ## Learning Goals
 TODO
 ## Setup
@@ -21,21 +31,24 @@ This project requires Ruby 2.7.4
 - To load data into the development database: Run `rake csv_load:all`
 - To enter queries via Postman: In the terminal run `rails s` and use the URL http://localhost:3000/graphql
 - To enter queries in Graph*i*QL: In the terminal run `rails s` and navigate to  http://localhost:3000/graphiql in your browser
-## Built With
+## Tech Stack
 ```
 Ruby on Rails
 RSpec
 GraphQL
 ```
+TODO add flowchart
 ## Database Schema
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/54966635/228691565-d1309797-4cab-4821-a063-ffcc26fbfd99.png">
 
 
 ## JSON Contract
 TODO
-## Queries
-TODO
+
+## APIs Used
+[<img src="https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png" alt= "freesound logo" width="50%">](https://freesound.org/docs/api/) 
 ## Backend Contributors
+TODO make these a table for easier readability
 ### Joe King 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/this-is-joeking) [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/king-joseph/)
 ### Ryan Canton 
@@ -54,5 +67,3 @@ TODO
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/BobAiken)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/robertsiraaiken/)
 ###  Zac Walters 
 [<img src="https://user-images.githubusercontent.com/54966635/228695316-4ace3a9e-d3a1-4063-b5f5-cd6e5294c585.png" alt= “” width="20" height="20">](https://github.com/zacwalters4)  [<img src="https://user-images.githubusercontent.com/54966635/228696723-e343f994-8860-4c35-9a89-5f34b7abb705.png" alt= “” width="21" height="21">](https://www.linkedin.com/in/zac-walters-67951b250/)
-## APIs Consumed
-[<img src="https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png" alt= "freesound logo" width="50%">](https://freesound.org/docs/api/) 
