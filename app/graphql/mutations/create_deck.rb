@@ -6,10 +6,15 @@ class Mutations::CreateDeck < Mutations::BaseMutation
 
   def resolve(category:)
     deck = Deck.new(category: category)
-    if deck.save
+    if deck.save && deck.sound_cards.count > 0
       {
         deck: deck,
         errors: []
+      }
+    elsif deck.save && deck.sound_cards.count < 1
+      {
+        deck: nil,
+        errors: ["There are no sound cards for category #{category}"]
       }
     else
       {
