@@ -26,10 +26,6 @@ class Deck < ApplicationRecord
   end
 
   def initial_sound_cards
-    unless category.downcase.include?('misc')
-      SoundCard.where("lower(category) = ?", category.downcase).shuffle.shuffle.first(8)
-    else
-      SoundCard.all.shuffle.shuffle.first(8)
-    end
+    SoundCard.where("lower(category) = ?", category.downcase).shuffle.shuffle.first(8)
   end
 end

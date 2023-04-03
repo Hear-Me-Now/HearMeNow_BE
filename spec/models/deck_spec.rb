@@ -19,6 +19,15 @@ RSpec.describe Deck do
         expect(sc.category).to eq("Animals")
       end
     end
+
+    it 'should create 8 deckcards of the correct category' do
+      deck = Deck.create!(category: "misc")
+      
+      expect(deck.sound_cards.count).to eq(8)
+      deck.sound_cards.each do |sc|
+        expect(sc.category).to eq("Misc")
+      end
+    end
   end
 
   describe 'return_sound_card' do
