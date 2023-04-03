@@ -55,7 +55,5 @@ RSpec.describe 'Sound Card Requests', type: :request do
         }
       }
     GQL
-
-    # response.dig('data')
   end
 end
