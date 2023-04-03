@@ -45,9 +45,9 @@ Ruby on Rails
 RSpec
 GraphQL
 ```
-TODO add flowchart
+TODO: add flowchart
 ## Database Schema
-<img width="527" alt="image" src="https://user-images.githubusercontent.com/54966635/228691565-d1309797-4cab-4821-a063-ffcc26fbfd99.png">
+![data base schema](/docs/db_schema.png)
 
 
 ## API Queries/Mutations
