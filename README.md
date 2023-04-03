@@ -12,6 +12,7 @@
 - [Frontend Contributors](#frontend-contributors)
 ## About Listen Up
 TODO Add links to deployed BE and FE and FE repo
+[Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
 ## Learning Goals
 TODO
 ## Setup
