@@ -11,6 +11,9 @@ module Types
       argument :category, String, required: true
       argument :limit, Integer, required: true, default_value: 8
     end
+    field :sound_card, Types::SoundCardType, null: false do
+      argument :deck_id, ID, required: true
+    end
     field :wrong_answers, [Types::WrongAnswerType], null: false
 
     def leaderboards
@@ -29,6 +32,9 @@ module Types
     def wrong_answers
       WrongAnswer.all
     end
-  
+    
+    def sound_card(deck_id:)
+      Deck.find(deck_id).return_sound_card
+    end
   end
 end
