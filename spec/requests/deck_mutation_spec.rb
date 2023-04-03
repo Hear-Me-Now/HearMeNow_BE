@@ -28,11 +28,10 @@ RSpec.describe 'deck mutation', type: :request do
 
   describe 'deck sad paths' do
     it 'returns a deck with no cards if category does not exist' do
-      mutation_response = decks_mutation('accents')
-      deck = mutation_response["createDeck"]["deck"]
-      new_deck = Deck.last
-  
-      expect(new_deck.sound_cards.count).to eq(0)
+      errors = decks_mutation('accents').dig('createDeck', 'errors')
+
+      expect(errors.first).to eq("There are no sound cards for category accents")
+      expect(Deck.last).to be nil
     end
 
     it 'returns an error if no category is given' do

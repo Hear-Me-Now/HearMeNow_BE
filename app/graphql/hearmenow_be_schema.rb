@@ -42,4 +42,8 @@ class HearmenowBeSchema < GraphQL::Schema
     # Raise a graphql-friendly error with a custom message
     raise GraphQL::ExecutionError, "#{field.type.unwrap.graphql_name} not found"
   end
+
+  rescue_from(LimitReachedError) do 
+    raise GraphQL::ExecutionError, "Unable to retrieve link, API limit reached"
+  end
 end
