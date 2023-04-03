@@ -39,6 +39,12 @@ RSpec.describe 'Sound Card Requests', type: :request do
       errors = response.dig('errors')
       expect(errors.first['message']).to eq("SoundCard not found")
     end
+
+    it 'returns an error if no deck id is given', :vcr do
+      response = query_sound_cards_with_no_deck
+      errors = response.dig('errors')
+      expect(errors.first['message']).to eq("Field 'soundCard' is missing required arguments: deckId")
+    end
   end
 
   private
@@ -47,6 +53,20 @@ RSpec.describe 'Sound Card Requests', type: :request do
     response = gql <<-GQL
       query soundCardsByDeckIdQuerySpec {
         soundCard(deckId: "#{deck_id}") {
+          id
+          category
+          correctAnswer
+          link
+          wrongAnswers
+        }
+      }
+    GQL
+  end
+
+  def query_sound_cards_with_no_deck
+    response = gql <<-GQL
+      query soundCardsByDeckIdQuerySpec {
+        soundCard {
           id
           category
           correctAnswer
