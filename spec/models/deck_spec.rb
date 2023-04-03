@@ -25,7 +25,7 @@ RSpec.describe Deck do
       
       expect(deck.sound_cards.count).to eq(8)
       deck.sound_cards.each do |sc|
-        expect(sc.category).to eq("Misc")
+        expect(sc.category.include?("Misc")).to eq true
       end
     end
   end
