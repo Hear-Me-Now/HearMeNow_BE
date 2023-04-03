@@ -1,7 +1,7 @@
 class Mutations::CreateDeck < Mutations::BaseMutation
   argument :category, String, required: true
   
-  field :deck, Types::DeckType, null: false
+  field :deck, Types::DeckType
   field :errors, [String], null: false
 
   def resolve(category:)
