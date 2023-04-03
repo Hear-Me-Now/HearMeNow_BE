@@ -50,8 +50,13 @@ TODO add flowchart
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/54966635/228691565-d1309797-4cab-4821-a063-ffcc26fbfd99.png">
 
 
-## JSON Contract
-TODO
+## API Queries/Mutations
+As a graphQL API all requests should be sent as post requests to `/graphql` with the header `"Content-Type": "application/json"`, click on a link below to see examples of query/mutation
+
+- [Get Leaderboards](/docs/get_leaderboards.md)
+- [Get a SoundCard](/docs/get_soundcard.md)
+- [Create a new Deck](/docs/post_deck.md)
+- [Create a new leaderboard entry](/docs/post_leaderboard.md)
 
 ## APIs Used
 [<img src="https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png" alt= "freesound logo" width="50%">](https://freesound.org/docs/api/) 
