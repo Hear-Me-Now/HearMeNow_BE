@@ -11,10 +11,17 @@
 - [Backend Contributors](#backend-contributors)
 - [Frontend Contributors](#frontend-contributors)
 ## About Listen Up
-TODO Add links to deployed BE and FE and FE repo
-[Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
+TODO: Write about section
+
+- [Play the Game](https://listen-up-five.vercel.app/)
+- [Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
+- [Graph*i*QL Playground](https://listen-up-be.herokuapp.com/graphiql)
 ## Learning Goals
-TODO
+- Working with separate frontend and backend teams using agile methodologies
+- Self teach and implement GraphQL
+- Utilize PR templates and comments as part of managing git workflow
+- Implement Continuous Integration & Continuous Delivery
+- Focus on open and frequent communication across teams via Slack, Zoom, Miro board, & Github Project Board
 ## Setup
 This project requires Ruby 2.7.4
 
