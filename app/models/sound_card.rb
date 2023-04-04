@@ -10,4 +10,5 @@ class SoundCard < ApplicationRecord
   def capitalize_answer
     self.correct_answer = self.correct_answer.titleize if self.correct_answer
   end
+
 end
