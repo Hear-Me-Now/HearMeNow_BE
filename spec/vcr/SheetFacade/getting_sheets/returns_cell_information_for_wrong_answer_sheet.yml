@@ -1,0 +1,1209 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/values/Wrong%20Answers?key=AIzaSyCq4qZ1Bt1F6aZ_YoJnEwL4bAY9QDiekoo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 04 Apr 2023 17:57:47 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "range": "'Wrong Answers'!A1:IU1007",
+          "majorDimension": "ROWS",
+          "values": [
+            [
+              "id",
+              "answer"
+            ],
+            [
+              "4202",
+              "Hot Tub Jets"
+            ],
+            [
+              "4202",
+              "Coffee Percolating"
+            ],
+            [
+              "4202",
+              "Gurgling Drain"
+            ],
+            [
+              "14354",
+              "Harpsichord"
+            ],
+            [
+              "14354",
+              "Ukulele"
+            ],
+            [
+              "14354",
+              "Guitar"
+            ],
+            [
+              "15401",
+              "Dinner Bell"
+            ],
+            [
+              "15401",
+              "Wind chimes"
+            ],
+            [
+              "15401",
+              "Hang Drum"
+            ],
+            [
+              "16933",
+              "Horse"
+            ],
+            [
+              "16933",
+              "Goat"
+            ],
+            [
+              "16933",
+              "Cow"
+            ],
+            [
+              "19433",
+              "Cymbal"
+            ],
+            [
+              "19433",
+              "Triangle"
+            ],
+            [
+              "19433",
+              "Tambourine"
+            ],
+            [
+              "19457",
+              "glockenspiel"
+            ],
+            [
+              "19457",
+              "vibraphone"
+            ],
+            [
+              "19457",
+              "hand bell"
+            ],
+            [
+              "23249",
+              "Bottle Cap Twisting Off"
+            ],
+            [
+              "23249",
+              "Champagne Bottle Opening"
+            ],
+            [
+              "23249",
+              "Wine Bottle Opening"
+            ],
+            [
+              "26870",
+              "Junk Drawer Closing"
+            ],
+            [
+              "26870",
+              "Cassette Player Ejecting"
+            ],
+            [
+              "26870",
+              "VHS Loading"
+            ],
+            [
+              "31166",
+              "Typing on a Keyboard"
+            ],
+            [
+              "31166",
+              "Boots on Snow"
+            ],
+            [
+              "31166",
+              "Door Closing"
+            ],
+            [
+              "38567",
+              "Top Fuel Dragster"
+            ],
+            [
+              "38567",
+              "MotoGP Motorcycle"
+            ],
+            [
+              "38567",
+              "Supercar"
+            ],
+            [
+              "44641",
+              "Clarinet"
+            ],
+            [
+              "44641",
+              "Alto Sax"
+            ],
+            [
+              "44641",
+              "Trumpet"
+            ],
+            [
+              "58811",
+              "Blinker"
+            ],
+            [
+              "58811",
+              "Typewriter"
+            ],
+            [
+              "58811",
+              "Light Switch"
+            ],
+            [
+              "59239",
+              "Triangle"
+            ],
+            [
+              "59239",
+              "Cow Bell"
+            ],
+            [
+              "59239",
+              "Bass Drum"
+            ],
+            [
+              "59569",
+              "Screech Owl"
+            ],
+            [
+              "59569",
+              "Mink Frog"
+            ],
+            [
+              "59569",
+              "Zebra"
+            ],
+            [
+              "66352",
+              "Snare"
+            ],
+            [
+              "66352",
+              "Tambourine"
+            ],
+            [
+              "66352",
+              "Timpani"
+            ],
+            [
+              "69570",
+              "Tiger"
+            ],
+            [
+              "69570",
+              "Cheetah"
+            ],
+            [
+              "69570",
+              "Grizzly Bear"
+            ],
+            [
+              "73371",
+              "Hornet"
+            ],
+            [
+              "73371",
+              "Humming Bird"
+            ],
+            [
+              "73371",
+              "Mosquito"
+            ],
+            [
+              "74871",
+              "Bass"
+            ],
+            [
+              "74871",
+              "Synthesizer"
+            ],
+            [
+              "74871",
+              "Slide Guitar"
+            ],
+            [
+              "74908",
+              "Shark"
+            ],
+            [
+              "74908",
+              "Dolphin"
+            ],
+            [
+              "74908",
+              "Dory"
+            ],
+            [
+              "78657",
+              "Fax machine"
+            ],
+            [
+              "78657",
+              "credit card reader"
+            ],
+            [
+              "78657",
+              "Dial-Up Internet modem"
+            ],
+            [
+              "88655",
+              "Upright Bass"
+            ],
+            [
+              "88655",
+              "Viola"
+            ],
+            [
+              "88655",
+              "Bassoon"
+            ],
+            [
+              "90205",
+              "Tape"
+            ],
+            [
+              "90205",
+              "Sandpaper"
+            ],
+            [
+              "90205",
+              "Tin Can"
+            ],
+            [
+              "103301",
+              "Leaf Blower"
+            ],
+            [
+              "103301",
+              "weed wacker"
+            ],
+            [
+              "103301",
+              "Lawn Mower"
+            ],
+            [
+              "103419",
+              "bear"
+            ],
+            [
+              "103419",
+              "dog"
+            ],
+            [
+              "103419",
+              "cat"
+            ],
+            [
+              "115362",
+              "Tiger"
+            ],
+            [
+              "115362",
+              "Howler Monkey"
+            ],
+            [
+              "115362",
+              "Pug"
+            ],
+            [
+              "116751",
+              "Tin can"
+            ],
+            [
+              "116751",
+              "Aluminum foil"
+            ],
+            [
+              "116751",
+              "Mouth Harp"
+            ],
+            [
+              "118440",
+              "Chainsaw"
+            ],
+            [
+              "118440",
+              "Impact Wrench"
+            ],
+            [
+              "118440",
+              "Jackhammer"
+            ],
+            [
+              "121511",
+              "Cicada"
+            ],
+            [
+              "121511",
+              "Spider"
+            ],
+            [
+              "121511",
+              "Hummingbird"
+            ],
+            [
+              "122822",
+              "Dryer"
+            ],
+            [
+              "122822",
+              "Jet Engine"
+            ],
+            [
+              "122822",
+              "Water Fountain"
+            ],
+            [
+              "132029",
+              "VCR Player"
+            ],
+            [
+              "132029",
+              "Camera shutter"
+            ],
+            [
+              "132029",
+              "Turning on lamp"
+            ],
+            [
+              "138049",
+              "Mechanical Keyboard"
+            ],
+            [
+              "138049",
+              "Cash Register"
+            ],
+            [
+              "138049",
+              "Punch Card Machine"
+            ],
+            [
+              "139875",
+              "Water Buffalo"
+            ],
+            [
+              "139875",
+              "Rhino"
+            ],
+            [
+              "139875",
+              "Camel"
+            ],
+            [
+              "145462",
+              "Snare Drum"
+            ],
+            [
+              "145462",
+              "Cow Bell"
+            ],
+            [
+              "145462",
+              "Gong"
+            ],
+            [
+              "158201",
+              "Flourescent light"
+            ],
+            [
+              "158201",
+              "Rain drops"
+            ],
+            [
+              "158201",
+              "Light wind"
+            ],
+            [
+              "166690",
+              "Fax Machine"
+            ],
+            [
+              "166690",
+              "Laminator"
+            ],
+            [
+              "166690",
+              "Dial Up"
+            ],
+            [
+              "175409",
+              "Bass Trumpet"
+            ],
+            [
+              "175409",
+              "Baritone Horn"
+            ],
+            [
+              "175409",
+              "Euphonium"
+            ],
+            [
+              "194949",
+              "Fox"
+            ],
+            [
+              "194949",
+              "Pigeons"
+            ],
+            [
+              "194949",
+              "Ravens"
+            ],
+            [
+              "196678",
+              "Food Processor"
+            ],
+            [
+              "196678",
+              "Blender"
+            ],
+            [
+              "196678",
+              "Leaf Blower"
+            ],
+            [
+              "212616",
+              "Freezer"
+            ],
+            [
+              "212616",
+              "Air conditioner"
+            ],
+            [
+              "212616",
+              "oven"
+            ],
+            [
+              "216381",
+              "machine gun"
+            ],
+            [
+              "216381",
+              " sewing machine"
+            ],
+            [
+              "216381",
+              "typewriter"
+            ],
+            [
+              "221528",
+              "Ice Cracking"
+            ],
+            [
+              "221528",
+              "Ceramic Breaking"
+            ],
+            [
+              "221528",
+              "Wind chimes"
+            ],
+            [
+              "235505",
+              "hole punch"
+            ],
+            [
+              "235505",
+              "tape dispenser"
+            ],
+            [
+              "235505",
+              "label maker"
+            ],
+            [
+              "241763",
+              "Escalator"
+            ],
+            [
+              "241763",
+              "Stair Lift"
+            ],
+            [
+              "241763",
+              "Dumbwaiter"
+            ],
+            [
+              "256564",
+              "Raking Leaves"
+            ],
+            [
+              "256564",
+              "Grocery Bags"
+            ],
+            [
+              "256564",
+              "Cereal"
+            ],
+            [
+              "256568",
+              "Bubble Wrap"
+            ],
+            [
+              "256568",
+              "Jar Lid"
+            ],
+            [
+              "256568",
+              "Suction Cup"
+            ],
+            [
+              "257368",
+              "Acoustic Guitar"
+            ],
+            [
+              "257368",
+              "Mandolin"
+            ],
+            [
+              "257368",
+              "Banjo"
+            ],
+            [
+              "260788",
+              "Mountain Lion"
+            ],
+            [
+              "260788",
+              "Gorilla"
+            ],
+            [
+              "260788",
+              "Hyena "
+            ],
+            [
+              "324313",
+              "Vacuum Cleaner"
+            ],
+            [
+              "324313",
+              "Hair Dryer"
+            ],
+            [
+              "324313",
+              "Formula One Car"
+            ],
+            [
+              "326756",
+              "Hyena"
+            ],
+            [
+              "326756",
+              "Baby"
+            ],
+            [
+              "326756",
+              "Car Engine"
+            ],
+            [
+              "347163",
+              "Thunder"
+            ],
+            [
+              "347163",
+              "Gun shots"
+            ],
+            [
+              "347163",
+              "Ballon Pop"
+            ],
+            [
+              "347973",
+              "Lawn Mower"
+            ],
+            [
+              "347973",
+              "Helicopter"
+            ],
+            [
+              "347973",
+              "Boat with Propeller"
+            ],
+            [
+              "351705",
+              "Accordion"
+            ],
+            [
+              "351705",
+              "Oboe"
+            ],
+            [
+              "351705",
+              "Harmonica"
+            ],
+            [
+              "362314",
+              "Band Saw"
+            ],
+            [
+              "362314",
+              "Circular Saw"
+            ],
+            [
+              "362314",
+              "Drill press"
+            ],
+            [
+              "365512",
+              "TV Remote"
+            ],
+            [
+              "365512",
+              "Mouse click"
+            ],
+            [
+              "365512",
+              "Flashlight"
+            ],
+            [
+              "366364",
+              "sheets"
+            ],
+            [
+              "366364",
+              "paper"
+            ],
+            [
+              "366364",
+              "parachute"
+            ],
+            [
+              "371815",
+              "Vacuum Cleaner"
+            ],
+            [
+              "371815",
+              "Oscilating Fan"
+            ],
+            [
+              "371815",
+              "Leaf Blower"
+            ],
+            [
+              "387544",
+              "Eagle"
+            ],
+            [
+              "387544",
+              "Mountain lion"
+            ],
+            [
+              "387544",
+              "Monkey"
+            ],
+            [
+              "396992",
+              "Airplane"
+            ],
+            [
+              "396992",
+              "Lawn Mower"
+            ],
+            [
+              "396992",
+              "Truck"
+            ],
+            [
+              "415153",
+              "Magpie"
+            ],
+            [
+              "415153",
+              "Elk"
+            ],
+            [
+              "415153",
+              "Coyote"
+            ],
+            [
+              "423777",
+              "Soda Can"
+            ],
+            [
+              "423777",
+              "Matchbook"
+            ],
+            [
+              "423777",
+              "Fidget Spinner"
+            ],
+            [
+              "424735",
+              "weed wacker"
+            ],
+            [
+              "424735",
+              "hair dryer"
+            ],
+            [
+              "424735",
+              "air fryer"
+            ],
+            [
+              "425542",
+              "Banjo"
+            ],
+            [
+              "425542",
+              "Mandolin"
+            ],
+            [
+              "425542",
+              "Guitar"
+            ],
+            [
+              "427502",
+              "French Horn"
+            ],
+            [
+              "427502",
+              "Flute"
+            ],
+            [
+              "427502",
+              "Saxaphone"
+            ],
+            [
+              "444587",
+              "Jaguar"
+            ],
+            [
+              "444587",
+              "Cougar"
+            ],
+            [
+              "444587",
+              "Minx"
+            ],
+            [
+              "475043",
+              "Leaf Warbler"
+            ],
+            [
+              "475043",
+              "Blackbird"
+            ],
+            [
+              "475043",
+              "American Sparrow"
+            ],
+            [
+              "479235",
+              "Cow"
+            ],
+            [
+              "479235",
+              "Pig"
+            ],
+            [
+              "479235",
+              "Lamb"
+            ],
+            [
+              "484269",
+              "Fart"
+            ],
+            [
+              "484269",
+              "Tire Leak"
+            ],
+            [
+              "484269",
+              "Steam Escaping"
+            ],
+            [
+              "486952",
+              "Guitar"
+            ],
+            [
+              "486952",
+              "Lute"
+            ],
+            [
+              "486952",
+              "Lyre"
+            ],
+            [
+              "494324",
+              "Geiger Counter"
+            ],
+            [
+              "494324",
+              "Typewriter"
+            ],
+            [
+              "494324",
+              "Fingernails Tapping"
+            ],
+            [
+              "506266",
+              "Guitar"
+            ],
+            [
+              "506266",
+              "Banjo"
+            ],
+            [
+              "506266",
+              "Mandolin"
+            ],
+            [
+              "510796",
+              "Cicada"
+            ],
+            [
+              "510796",
+              "Rattlesnake"
+            ],
+            [
+              "510796",
+              "Egg Shaker"
+            ],
+            [
+              "510917",
+              "Pelican"
+            ],
+            [
+              "510917",
+              "Eagle"
+            ],
+            [
+              "510917",
+              "Hawk"
+            ],
+            [
+              "514847",
+              "flute"
+            ],
+            [
+              "514847",
+              "piccolo"
+            ],
+            [
+              "514847",
+              "clarinet"
+            ],
+            [
+              "515053",
+              "cricket"
+            ],
+            [
+              "515053",
+              "locust"
+            ],
+            [
+              "515053",
+              "monkey"
+            ],
+            [
+              "517824",
+              "Bongo"
+            ],
+            [
+              "517824",
+              "Djembe"
+            ],
+            [
+              "517824",
+              "Doumbek"
+            ],
+            [
+              "523909",
+              "Viola"
+            ],
+            [
+              "523909",
+              "Cello"
+            ],
+            [
+              "523909",
+              "Upright bass"
+            ],
+            [
+              "533171",
+              "Chopping Wood"
+            ],
+            [
+              "533171",
+              "Door Closing"
+            ],
+            [
+              "533171",
+              "Metronome"
+            ],
+            [
+              "540162",
+              "Racoon"
+            ],
+            [
+              "540162",
+              "Hissing Cockroach"
+            ],
+            [
+              "540162",
+              "Cat"
+            ],
+            [
+              "564441",
+              "bassoon"
+            ],
+            [
+              "564441",
+              "cello"
+            ],
+            [
+              "564441",
+              "baritone"
+            ],
+            [
+              "584605",
+              "Washing Machine"
+            ],
+            [
+              "584605",
+              "Motorcycle"
+            ],
+            [
+              "584605",
+              "Helicopter"
+            ],
+            [
+              "587043",
+              "Conveyer Belt"
+            ],
+            [
+              "587043",
+              "Trimmer"
+            ],
+            [
+              "587043",
+              "Toaster"
+            ],
+            [
+              "590054",
+              "macaw"
+            ],
+            [
+              "590054",
+              "osprey"
+            ],
+            [
+              "590054",
+              "duck"
+            ],
+            [
+              "592786",
+              "Chicken"
+            ],
+            [
+              "592786",
+              "Goose"
+            ],
+            [
+              "592786",
+              "Duck"
+            ],
+            [
+              "619018",
+              "Typewriter"
+            ],
+            [
+              "619018",
+              "Pencil"
+            ],
+            [
+              "619018",
+              "Chopsticks"
+            ],
+            [
+              "621132",
+              "copy machine"
+            ],
+            [
+              "621132",
+              "fan"
+            ],
+            [
+              "621132",
+              "dryer"
+            ],
+            [
+              "627333",
+              "Harp"
+            ],
+            [
+              "627333",
+              "Mandolin"
+            ],
+            [
+              "627333",
+              "Keytar"
+            ],
+            [
+              "632817",
+              "Classical Guitar"
+            ],
+            [
+              "632817",
+              "Ukulele"
+            ],
+            [
+              "632817",
+              "Mandolin"
+            ],
+            [
+              "634662",
+              "Snake"
+            ],
+            [
+              "634662",
+              "Hissing Cockroach"
+            ],
+            [
+              "634662",
+              "Duck"
+            ],
+            [
+              "636526",
+              "Broom"
+            ],
+            [
+              "636526",
+              "Knife"
+            ],
+            [
+              "636526",
+              "Chalk"
+            ],
+            [
+              "649692",
+              "Waterfall"
+            ],
+            [
+              "649692",
+              "Vinyl Popping"
+            ],
+            [
+              "649692",
+              "Washing Machine"
+            ],
+            [
+              "655456",
+              "Keyboard"
+            ],
+            [
+              "655456",
+              "Campfire"
+            ],
+            [
+              "655456",
+              "Remote"
+            ],
+            [
+              "662256",
+              "Ping Pong"
+            ],
+            [
+              "662256",
+              "Bandminton"
+            ],
+            [
+              "662256",
+              "Paddleball"
+            ],
+            [
+              "664882",
+              "Pig"
+            ],
+            [
+              "664882",
+              "Bear"
+            ],
+            [
+              "664882",
+              "Horse"
+            ],
+            [
+              "667383",
+              "Fishing Rod"
+            ],
+            [
+              "667383",
+              "Wood Sculpting"
+            ],
+            [
+              "667383",
+              "Bicycle"
+            ],
+            [
+              "667579",
+              "Marmot"
+            ],
+            [
+              "667579",
+              "Rat"
+            ],
+            [
+              "667579",
+              "Cardinal"
+            ],
+            [
+              "669395",
+              "Sewing Machine"
+            ],
+            [
+              "669395",
+              "Lawnmower"
+            ],
+            [
+              "669395",
+              "Dishwasher"
+            ]
+          ]
+        }
+  recorded_at: Tue, 04 Apr 2023 17:57:47 GMT
+recorded_with: VCR 6.1.0
