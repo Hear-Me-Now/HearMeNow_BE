@@ -13,9 +13,9 @@ class HearmenowBeSchema < GraphQL::Schema
     # end
     super
   end
-  
+
   # Union and Interface Resolution
-  def self.resolve_type(abstract_type, obj, ctx)
+  def self.resolve_type(_abstract_type, _obj, _ctx)
     # TODO: Implement this method
     # to return the correct GraphQL object type for `obj`
     raise(GraphQL::RequiredImplementationMissingError)
@@ -27,23 +27,23 @@ class HearmenowBeSchema < GraphQL::Schema
   # Relay-style Object Identification:
 
   # Return a string UUID for `object`
-  def self.id_from_object(object, type_definition, query_ctx)
+  def self.id_from_object(object, _type_definition, _query_ctx)
     # For example, use Rails' GlobalID library (https://github.com/rails/globalid):
     object.to_gid_param
   end
 
   # Given a string UUID, find the object
-  def self.object_from_id(global_id, query_ctx)
+  def self.object_from_id(global_id, _query_ctx)
     # For example, use Rails' GlobalID library (https://github.com/rails/globalid):
     GlobalID.find(global_id)
   end
 
-  rescue_from(ActiveRecord::RecordNotFound) do |err, obj, args, ctx, field|
+  rescue_from(ActiveRecord::RecordNotFound) do |_err, _obj, _args, _ctx, field|
     # Raise a graphql-friendly error with a custom message
     raise GraphQL::ExecutionError, "#{field.type.unwrap.graphql_name} not found"
   end
 
-  rescue_from(LimitReachedError) do 
-    raise GraphQL::ExecutionError, "Unable to retrieve link, API limit reached"
+  rescue_from(LimitReachedError) do
+    raise GraphQL::ExecutionError, 'Unable to retrieve link, API limit reached'
   end
 end

@@ -2,13 +2,12 @@ require 'rails_helper'
 
 RSpec.describe 'Sound Card Requests', type: :request do
   describe 'Sound Card Queries' do
-
     before :each do
-      allow(SoundFacade).to receive(:get_link).and_return("https://cdn.freesound.org/previews/510/510917_11157357-hq.mp3")
+      allow(SoundFacade).to receive(:get_link).and_return('https://cdn.freesound.org/previews/510/510917_11157357-hq.mp3')
     end
- 
+
     it 'returns asound card in the correct category for the given deck id', :vcr do
-      deck_id = Deck.create!(category: "Animals").id
+      deck_id = Deck.create!(category: 'Animals').id
       response = query_sound_cards_by_deck_id(deck_id)
       sound_card = response.dig('data', 'soundCard')
 
@@ -17,28 +16,27 @@ RSpec.describe 'Sound Card Requests', type: :request do
       expect(SoundCard.exists?(sound_card['id']))
       expect(SoundCard.find(sound_card['id']).wrong_answers.pluck(:answer).sort).to eq(sound_card['wrongAnswers'].sort)
     end
- 
 
     describe 'Sound Card Sad Paths' do
       it 'returns an error if deck is out of cards', :vcr do
-        deck_id = Deck.create!(category: "Animals").id
-        8.times do 
+        deck_id = Deck.create!(category: 'Animals').id
+        8.times do
           query_sound_cards_by_deck_id(deck_id)
         end
         response = query_sound_cards_by_deck_id(deck_id)
         errors = response.dig('errors')
-        
+
         expect(errors.count).to eq(1)
-        expect(errors.first["message"]).to eq("Cannot return null for non-nullable field Query.soundCard")
+        expect(errors.first['message']).to eq('Cannot return null for non-nullable field Query.soundCard')
       end
 
       it 'returns an error if given deck id does not exist', :vcr do
-        Deck.create!(category: "Misc")
+        Deck.create!(category: 'Misc')
         deck_id = Deck.maximum(:id) + 1
 
         response = query_sound_cards_by_deck_id(deck_id)
         errors = response.dig('errors')
-        expect(errors.first['message']).to eq("SoundCard not found")
+        expect(errors.first['message']).to eq('SoundCard not found')
       end
 
       it 'returns an error if no deck id is given', :vcr do
@@ -49,14 +47,14 @@ RSpec.describe 'Sound Card Requests', type: :request do
     end
   end
 
-  describe "Sound Card Queries" do
+  describe 'Sound Card Queries' do
     it 'returns a unique error if api limit is reached' do
-      allow(SoundService).to receive(:get_sound_data).and_return({ })
-      deck_id = Deck.create!(category: "Misc").id
+      allow(SoundService).to receive(:get_sound_data).and_return({})
+      deck_id = Deck.create!(category: 'Misc').id
 
       response = query_sound_cards_by_deck_id(deck_id)
       errors = response.dig('errors')
-      expect(errors.first['message']).to eq("Unable to retrieve link, API limit reached")
+      expect(errors.first['message']).to eq('Unable to retrieve link, API limit reached')
     end
   end
 

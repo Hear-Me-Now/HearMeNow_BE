@@ -3,7 +3,7 @@ class Mutations::CreateLeaderboard < Mutations::BaseMutation
   argument :score, Integer, required: true
   argument :category, String, required: true
   argument :difficulty, String, required: true
-  
+
   field :leaderboard, Types::LeaderboardType, null: false
   field :errors, [String], null: false
 

@@ -13,7 +13,6 @@ module Types
     def link
       SoundFacade.get_link(object.id)
     end
-  
 
     def wrong_answers
       object.wrong_answers.pluck(:answer)
