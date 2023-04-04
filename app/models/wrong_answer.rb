@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WrongAnswer < ApplicationRecord
   belongs_to :sound_card
 
@@ -6,6 +8,6 @@ class WrongAnswer < ApplicationRecord
   before_validation :capitalize_answer
 
   def capitalize_answer
-    self.answer = self.answer.titleize if self.answer
+    self.answer = answer.titleize if answer
   end
 end

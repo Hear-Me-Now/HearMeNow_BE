@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Types
   class QueryType < Types::BaseObject
     # Add `node(id: ID!) and `nodes(ids: [ID!]!)`
@@ -19,7 +21,7 @@ module Types
     def wrong_answers
       WrongAnswer.all
     end
-    
+
     def sound_card(deck_id:)
       Deck.find(deck_id).return_sound_card
     end

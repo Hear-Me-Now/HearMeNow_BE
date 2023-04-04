@@ -1,0 +1,538 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/values/Sound%20Cards?key=<GOOGLE_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Tue, 04 Apr 2023 18:06:04 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "range": "'Sound Cards'!A1:Z994",
+          "majorDimension": "ROWS",
+          "values": [
+            [
+              "category",
+              "id",
+              "correct_answer"
+            ],
+            [
+              "Misc",
+              "4202",
+              "Boiling Water"
+            ],
+            [
+              "Instruments",
+              "14354",
+              "Mandolin"
+            ],
+            [
+              "Instruments",
+              "15401",
+              "Tibetian Bell"
+            ],
+            [
+              "Animals",
+              "16933",
+              "Donkey"
+            ],
+            [
+              "Instruments",
+              "19433",
+              "Snaredrum"
+            ],
+            [
+              "Instruments",
+              "19457",
+              "Xylophone"
+            ],
+            [
+              "Misc",
+              "23249",
+              "Can Opening"
+            ],
+            [
+              "Misc",
+              "26870",
+              "CD tray"
+            ],
+            [
+              "Misc",
+              "31166",
+              "Chopping Wood"
+            ],
+            [
+              "Machines",
+              "38567",
+              "Formula 1 Car"
+            ],
+            [
+              "Instruments",
+              "44641",
+              "Tenor Sax"
+            ],
+            [
+              "Machines",
+              "58811",
+              "Clock"
+            ],
+            [
+              "Instruments",
+              "59239",
+              "Gong"
+            ],
+            [
+              "Animals",
+              "59569",
+              "Horse"
+            ],
+            [
+              "Instruments",
+              "66352",
+              "Bongo Drum"
+            ],
+            [
+              "Animals",
+              "69570",
+              "Lion"
+            ],
+            [
+              "Animals",
+              "73371",
+              "Bee"
+            ],
+            [
+              "Instruments",
+              "74871",
+              "Electric Guitar"
+            ],
+            [
+              "Animals",
+              "74908",
+              "Whale"
+            ],
+            [
+              "Machines",
+              "78657",
+              "1200 baud modem"
+            ],
+            [
+              "Instruments",
+              "88655",
+              "Cello"
+            ],
+            [
+              "Misc",
+              "90205",
+              "Shovel"
+            ],
+            [
+              "Machines",
+              "103301",
+              "Chain saw"
+            ],
+            [
+              "Animals",
+              "103419",
+              "Pig"
+            ],
+            [
+              "Animals",
+              "115362",
+              "Mountain Lion"
+            ],
+            [
+              "Misc",
+              "116751",
+              "sheet metal"
+            ],
+            [
+              "Machines",
+              "118440",
+              "Drill"
+            ],
+            [
+              "Animals",
+              "121511",
+              "Cricket"
+            ],
+            [
+              "Machines",
+              "122822",
+              "Washing Machine"
+            ],
+            [
+              "Misc.",
+              "132029",
+              "Tape player"
+            ],
+            [
+              "Machines",
+              "138049",
+              "Typewriter"
+            ],
+            [
+              "Animals",
+              "139875",
+              "Elephant"
+            ],
+            [
+              "Instruments",
+              "145462",
+              "Steel Drum"
+            ],
+            [
+              "Misc.",
+              "158201",
+              "Record Player"
+            ],
+            [
+              "Machines",
+              "166690",
+              "Printer"
+            ],
+            [
+              "Instruments",
+              "175409",
+              "Trumbone"
+            ],
+            [
+              "Animals",
+              "194949",
+              "Crows"
+            ],
+            [
+              "Machines",
+              "196678",
+              "Coffee Grinder"
+            ],
+            [
+              "Machines",
+              "212616",
+              "Refrigerator"
+            ],
+            [
+              "Machines",
+              "216381",
+              "Lawn Mower"
+            ],
+            [
+              "Misc",
+              "221528",
+              "glass breaking"
+            ],
+            [
+              "Machines",
+              "235505",
+              "Stapler"
+            ],
+            [
+              "Machines",
+              "241763",
+              "elevator"
+            ],
+            [
+              "Misc",
+              "256564",
+              "Bag of chips"
+            ],
+            [
+              "Misc",
+              "256568",
+              "Cork Pop"
+            ],
+            [
+              "Instruments",
+              "257368",
+              "Ukelele"
+            ],
+            [
+              "Animals",
+              "260788",
+              "Howler Monkey"
+            ],
+            [
+              "Machines",
+              "324313",
+              "Commercial Plane"
+            ],
+            [
+              "Misc",
+              "326756",
+              "Balloon Deflate"
+            ],
+            [
+              "Misc",
+              "347163",
+              "firework"
+            ],
+            [
+              "Machines",
+              "347973",
+              "Propeller Plane"
+            ],
+            [
+              "Instruments",
+              "351705",
+              "Melodica"
+            ],
+            [
+              "Machines",
+              "362314",
+              "Table saw"
+            ],
+            [
+              "Misc.",
+              "365512",
+              "Pen clicking"
+            ],
+            [
+              "Misc",
+              "366364",
+              "Umbrella"
+            ],
+            [
+              "Machines",
+              "371815",
+              "Hair Dryer"
+            ],
+            [
+              "Animals",
+              "387544",
+              "Fox"
+            ],
+            [
+              "Machines",
+              "396992",
+              "Helicopter"
+            ],
+            [
+              "Animals",
+              "415153",
+              "Owl"
+            ],
+            [
+              "Misc",
+              "423777",
+              "Lighter"
+            ],
+            [
+              "Machines",
+              "424735",
+              "Vacuum"
+            ],
+            [
+              "Instruments",
+              "425542",
+              "Ukulele"
+            ],
+            [
+              "Instruments",
+              "427502",
+              "Clarinet"
+            ],
+            [
+              "Animals",
+              "444587",
+              "Kitten"
+            ],
+            [
+              "Animals",
+              "475043",
+              "White Eyed Vireo"
+            ],
+            [
+              "Animals",
+              "479235",
+              "Sheep"
+            ],
+            [
+              "Misc",
+              "484269",
+              "Balloon Deflating"
+            ],
+            [
+              "Instruments",
+              "486952",
+              "Harp"
+            ],
+            [
+              "Misc",
+              "494324",
+              "Bicycle Freewheeling"
+            ],
+            [
+              "Instruments",
+              "506266",
+              "Lute"
+            ],
+            [
+              "Instruments",
+              "510796",
+              "Maraca"
+            ],
+            [
+              "Animals",
+              "510917",
+              "Seagull"
+            ],
+            [
+              "Instruments",
+              "514847",
+              "Oboe"
+            ],
+            [
+              "Animals",
+              "515053",
+              "Cicada"
+            ],
+            [
+              "Instruments",
+              "517824",
+              "Toubeleki"
+            ],
+            [
+              "Instruments",
+              "523909",
+              "Violin"
+            ],
+            [
+              "Misc",
+              "533171",
+              "Vegtable Dicing"
+            ],
+            [
+              "Animals",
+              "540162",
+              "Snake"
+            ],
+            [
+              "Machines",
+              "584605",
+              "Car"
+            ],
+            [
+              "Machines",
+              "587043",
+              "Microwave"
+            ],
+            [
+              "Animals",
+              "590054",
+              "Geese"
+            ],
+            [
+              "Animals",
+              "592786",
+              "Turkey"
+            ],
+            [
+              "Misc",
+              "619018",
+              "Chalk on Board"
+            ],
+            [
+              "Machines",
+              "621132",
+              "Sewing Machine"
+            ],
+            [
+              "Instruments",
+              "627333",
+              "Harpsichord"
+            ],
+            [
+              "Instruments",
+              "632817",
+              "Acoustic Guitar"
+            ],
+            [
+              "Animals",
+              "634662",
+              "Cat"
+            ],
+            [
+              "Misc",
+              "636526",
+              "Spray Bottle"
+            ],
+            [
+              "Machines",
+              "649692",
+              "Air Conditioner"
+            ],
+            [
+              "Misc",
+              "655456",
+              "Controller Joystick"
+            ],
+            [
+              "Misc",
+              "662256",
+              "Tennis"
+            ],
+            [
+              "Animals",
+              "664882",
+              "Dog"
+            ],
+            [
+              "Machines",
+              "667383",
+              "Pencil Sharpener"
+            ],
+            [
+              "Animals",
+              "667579",
+              "Bat"
+            ],
+            [
+              "Misc",
+              "669395",
+              "Boat"
+            ],
+            [
+              "Instruments",
+              "564441",
+              "Bass Guitar"
+            ]
+          ]
+        }
+  recorded_at: Tue, 04 Apr 2023 18:06:04 GMT
+recorded_with: VCR 6.1.0

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SoundCard < ApplicationRecord
   has_many :wrong_answers, dependent: :destroy
   has_many :deck_cards
@@ -8,6 +10,6 @@ class SoundCard < ApplicationRecord
   before_validation :capitalize_answer
 
   def capitalize_answer
-    self.correct_answer = self.correct_answer.titleize if self.correct_answer
+    self.correct_answer = correct_answer.titleize if correct_answer
   end
 end
