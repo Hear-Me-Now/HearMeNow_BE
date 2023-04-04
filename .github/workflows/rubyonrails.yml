@@ -26,6 +26,7 @@ jobs:
       RAILS_ENV: test
       DATABASE_URL: "postgres://postgres:password@localhost:5432/hearmenow_be_test"
       FREE_SOUND_KEY: ${{ secrets.FREE_SOUND_KEY }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
