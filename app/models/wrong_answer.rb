@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class WrongAnswer < ApplicationRecord
   belongs_to :sound_card
 

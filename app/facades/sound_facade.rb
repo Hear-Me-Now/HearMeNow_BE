@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SoundFacade
   def self.get_link(id)
     data = SoundService.get_sound_data(id)

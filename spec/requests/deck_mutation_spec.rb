@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'deck mutation', type: :request do
@@ -46,7 +48,7 @@ RSpec.describe 'deck mutation', type: :request do
           }
         }
       GQL
-      errors = response.dig('errors')
+      errors = response['errors']
 
       expect(errors.first['message']).to eq("Argument 'category' on InputObject 'CreateDeckInput' is required. Expected type String!")
       expect(Deck.last).to be nil
@@ -69,6 +71,6 @@ RSpec.describe 'deck mutation', type: :request do
       }
     GQL
 
-    response.dig('data')
+    response['data']
   end
 end

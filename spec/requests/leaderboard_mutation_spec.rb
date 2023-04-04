@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'leaderboard mutation', type: :request do
@@ -36,6 +38,6 @@ RSpec.describe 'leaderboard mutation', type: :request do
       }
     GQL
 
-    response.dig('data')
+    response['data']
   end
 end

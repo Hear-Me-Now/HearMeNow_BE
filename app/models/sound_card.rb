@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SoundCard < ApplicationRecord
   has_many :wrong_answers, dependent: :destroy
   has_many :deck_cards

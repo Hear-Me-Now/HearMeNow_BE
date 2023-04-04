@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateWrongAnswers < ActiveRecord::Migration[5.2]
   def change
     create_table :wrong_answers do |t|

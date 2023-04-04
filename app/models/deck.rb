@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Deck < ApplicationRecord
   validates_presence_of :category
   has_many :deck_cards

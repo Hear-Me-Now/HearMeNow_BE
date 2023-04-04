@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SoundService
   def self.conn
     url = 'https://freesound.org'

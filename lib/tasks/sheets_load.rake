@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 namespace :sheets_load do
   task sound_cards: :environment do
     puts 'Loading Sound Card Information!'

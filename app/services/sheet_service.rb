@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SheetService
   def self.conn
     url = 'https://sheets.googleapis.com'
