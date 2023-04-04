@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe SheetFacade do
-  it 'does' do
+  describe 'getting sheets' do
+    it 'returns cell information for sound card sheet', :vcr do
+
+    end
   end
 end
