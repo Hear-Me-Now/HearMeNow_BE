@@ -2,7 +2,7 @@ namespace :sheets_load do
   task sound_cards: :environment do
     puts 'Loading Sound Card Information!'
     SoundCard.destroy_all
-    sound_card_data = SheetFacade.get_sheets('Sound%20Cards')
+    sound_card_data = SheetFacade.get_sheet('Sound%20Cards')
     sound_card_data.each do |sc|
       SoundCard.create!({ category: sc[0], id: sc[1], correct_answer: sc[2] })
     end
@@ -12,7 +12,7 @@ namespace :sheets_load do
   task wrong_answers: :environment do
     puts 'Loading Wrong Answer Information!'
     WrongAnswer.destroy_all
-    wrong_answer_data = SheetFacade.get_sheets('Wrong%20Answers')
+    wrong_answer_data = SheetFacade.get_sheet('Wrong%20Answers')
     wrong_answer_data.each do |wa|
       WrongAnswer.create!({ sound_card_id: wa[0], answer: wa[1] })
     end

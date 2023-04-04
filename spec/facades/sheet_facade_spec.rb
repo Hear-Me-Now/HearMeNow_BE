@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe SheetFacade do
   describe 'getting sheets' do
     it 'returns cell information for sound card sheet', :vcr do
-      sound_card_data = SheetFacade.get_sheets('Sound%20Cards')
+      sound_card_data = SheetFacade.get_sheet('Sound%20Cards')
 
       expect(sound_card_data.first.second).to eq('4202')
       expect(sound_card_data[44].second).to eq('256568')
@@ -14,7 +14,7 @@ RSpec.describe SheetFacade do
     end
 
     it 'returns cell information for wrong answer sheet', :vcr do
-      wrong_answer_data = SheetFacade.get_sheets('Wrong%20Answers')
+      wrong_answer_data = SheetFacade.get_sheet('Wrong%20Answers')
 
       expect(wrong_answer_data.first.first).to eq('4202')
       expect(wrong_answer_data[44].second).to eq('Timpani')

@@ -17,6 +17,7 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.filter_sensitive_data('<FREE_SOUND_KEY>') { ENV['FREE_SOUND_KEY'] }
+  c.filter_sensitive_data('<GOOGLE_API_KEY>') { ENV['GOOGLE_API_KEY'] }
 end
 
 Shoulda::Matchers.configure do |config|

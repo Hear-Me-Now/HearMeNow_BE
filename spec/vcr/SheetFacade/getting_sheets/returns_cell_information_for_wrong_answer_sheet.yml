@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://sheets.googleapis.com/v4/spreadsheets/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/values/Wrong%20Answers?key=AIzaSyCq4qZ1Bt1F6aZ_YoJnEwL4bAY9QDiekoo
+    uri: https://sheets.googleapis.com/v4/spreadsheets/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/values/Wrong%20Answers?key=<GOOGLE_API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 04 Apr 2023 17:57:47 GMT
+      - Tue, 04 Apr 2023 18:06:05 GMT
       Server:
       - ESF
       Cache-Control:
@@ -1205,5 +1205,5 @@ http_interactions:
             ]
           ]
         }
-  recorded_at: Tue, 04 Apr 2023 17:57:47 GMT
+  recorded_at: Tue, 04 Apr 2023 18:06:05 GMT
 recorded_with: VCR 6.1.0
