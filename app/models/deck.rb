@@ -2,7 +2,7 @@
 
 class Deck < ApplicationRecord
   validates_presence_of :category
-  has_many :deck_cards
+  has_many :deck_cards, dependent: :destroy
   has_many :sound_cards, through: :deck_cards
   after_create :get_cards
 
