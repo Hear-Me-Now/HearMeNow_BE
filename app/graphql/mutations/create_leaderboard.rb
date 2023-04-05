@@ -5,7 +5,7 @@ module Mutations
     argument :name, String, required: true
     argument :score, Integer, required: true
     argument :category, String, required: true
-    argument :difficulty, String
+    argument :difficulty, String, required: true
 
     field :leaderboard, Types::LeaderboardType, null: false
     field :errors, [String], null: false
