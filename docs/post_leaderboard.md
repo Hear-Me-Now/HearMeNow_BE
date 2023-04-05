@@ -10,9 +10,9 @@ Mutation
 ```
 mutation createLeaderBoard($name: String!, $score: Int!, $category: String!, $difficulty: String!){
   createLeaderboard(input: {
-    name: $name
-    score: $score
-    category: $category
+    name: $name,
+    score: $score,
+    category: $category,
     difficulty: $difficulty
   }) {
     leaderboard {
