@@ -18,7 +18,6 @@ RSpec.describe 'deck mutation', type: :request do
   describe 'deck edge cases' do
     it 'returns a deck with correct categories case insensitively' do
       mutation_response = decks_mutation('iNsTrumENTS')
-      deck = mutation_response['createDeck']['deck']
       new_deck = Deck.last
 
       expect(new_deck.category).to eq('iNsTrumENTS')
