@@ -53,12 +53,8 @@ This project requires Ruby 2.7.4
 - To enter queries in Graph*i*QL: In the terminal run `rails s` and navigate to  http://localhost:3000/graphiql in your browser
 
 ## Tech Stack
-```
-Ruby on Rails
-RSpec
-GraphQL
-```
-TODO: add flowchart
+![Tech Stack flow chart](https://user-images.githubusercontent.com/54966635/230176619-b7cc1252-4b04-4d47-8a03-d5e9e69d51b0.png)
+
 
 ## Database Schema
 ![data base schema](/docs/db_schema.png)
