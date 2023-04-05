@@ -48,7 +48,7 @@ This project requires Ruby 2.7.4
     - If you wish to use your own data you can enter your own data in the csv files located in `db/data/sound_cards.csv` and `db/data/wrong_answers.csv`
 - To load data into the development database via google sheets: Run `rake sheets_load:all`
   - If you use Google Sheets you will also need to create a [Google API key](https://developers.google.com/sheets/api/quickstart/js) and add that to `app/config/application.yml` as `GOOGLE_API_KEY: <API KEY GOES HERE>`
-  - Additionally if you want to create your own questions you will need to follow the format of this sheet and add your id into the URI in `app/services/sheet_service.rb` in the `get_sheets` method.
+  - Additionally if you want to create your own questions you will need to follow the format of the [Sound Cards](https://docs.google.com/spreadsheets/d/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/edit#gid=445347206) and [Wrong Answers](https://docs.google.com/spreadsheets/d/1TeZ7Us1_hKnbMFoMUhNEnINzBgLB3vR8nJRwF8LO04M/edit#gid=1001568306) sheets and add your id into the URI in `app/services/sheet_service.rb` in the `get_sheets` method.
 - To enter queries via Postman: In the terminal run `rails s` and use the URL http://localhost:3000/graphql
 - To enter queries in Graph*i*QL: In the terminal run `rails s` and navigate to  http://localhost:3000/graphiql in your browser
 
