@@ -6,7 +6,7 @@
 - [Setup](#setup)
 - [Tech Stack](#tech-stack)
 - [Database Scheme](#database-schema) 
-- [JSON Contract](#json-contract)
+- [API Queries/Mutations](#api-queries-and-mutations)
 - [APIs Used](#apis-used)
 - [Backend Contributors](#backend-contributors)
 - [Frontend Contributors](#frontend-contributors)
@@ -22,12 +22,14 @@ Overall, our backend provides a seamless and engaging user experience, with a va
 - [Play the Game](https://listen-up-five.vercel.app/)
 - [Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
 - [Graph*i*QL Playground](https://listen-up-be.herokuapp.com/graphiql)
+
 ## Learning Goals
 - Working with separate frontend and backend teams using agile methodologies
 - Self teach and implement GraphQL
 - Utilize PR templates and comments as part of managing git workflow
 - Implement Continuous Integration & Continuous Delivery
 - Focus on open and frequent communication across teams via Slack, Zoom, Miro board, & Github Project Board
+
 ## Setup
 This project requires Ruby 2.7.4
 
@@ -42,9 +44,14 @@ This project requires Ruby 2.7.4
       You can sign up for a freesound.org API key [here](http://freesound.org/apiv2/apply)
 1. Run `rails db:{drop,create,migrate}` to setup the databases
 - To run the test suite: Run `bundle exec rspec`
-- To load data into the development database: Run `rake csv_load:all`
+- To load data into the development database via csv files: Run `rake csv_load:all`
+    - If you wish to use your own data you can enter your own data in the csv files located in `db/data/sound_cards.csv` and `db/data/wrong_answers.csv`
+- To load data into the development database via google sheets: Run `rake sheets_load:all`
+  - If you use Google Sheets you will also need to create a [Google API key](https://developers.google.com/sheets/api/quickstart/js) and add that to `app/config/application.yml` as `GOOGLE_API_KEY: <API KEY GOES HERE>`
+  - Additionally if you want to create your own questions you will need to follow the format of this sheet and add your id into the URI in `app/services/sheet_service.rb` in the `get_sheets` method.
 - To enter queries via Postman: In the terminal run `rails s` and use the URL http://localhost:3000/graphql
 - To enter queries in Graph*i*QL: In the terminal run `rails s` and navigate to  http://localhost:3000/graphiql in your browser
+
 ## Tech Stack
 ```
 Ruby on Rails
@@ -52,11 +59,11 @@ RSpec
 GraphQL
 ```
 TODO: add flowchart
+
 ## Database Schema
 ![data base schema](/docs/db_schema.png)
 
-
-## API Queries/Mutations
+## API Queries and Mutations
 As a graphQL API all requests should be sent as post requests to `/graphql` with the header `"Content-Type": "application/json"`, click on a link below to see examples of query/mutation
 
 - [Get Leaderboards](/docs/get_leaderboards.md)
@@ -66,6 +73,7 @@ As a graphQL API all requests should be sent as post requests to `/graphql` with
 
 ## APIs Used
 [<img src="https://user-images.githubusercontent.com/54966635/228692043-a9755702-2fc0-4158-9527-23d4014c0704.png" alt= "freesound logo" width="50%">](https://freesound.org/docs/api/) 
+[![image](https://user-images.githubusercontent.com/54966635/230138595-527a9a60-9478-437e-92db-576fcc475804.png)](https://console.cloud.google.com/apis/library/sheets.googleapis.com)
 ## Backend Contributors
 
 | <img src="https://github.com/ryancanton.png" width="60"> | <img src="https://github.com/sambcox.png" width="60"> | <img src="https://github.com/this-is-joeking.png" width="60">  |
