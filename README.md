@@ -11,7 +11,13 @@
 - [Backend Contributors](#backend-contributors)
 - [Frontend Contributors](#frontend-contributors)
 ## About Listen Up
-TODO: Write about section
+Our backend is the core of the sound-guessing game that powers the app. It holds and manages data on the various sounds that the user can play, and responds to requests from the front end to generate decks of sounds and track scores on the leaderboard.
+
+When the front end requests a new game, the backend randomly selects 8 sound cards from the available pool of sounds and combines them into a deck. This ensures that each game is unique and challenging.
+
+Once the deck is created, the front end can request sounds from the deck until it is empty. The backend keeps track of the user's score after the game, so they can compare their scores across other players and their past games.
+
+Overall, our backend provides a seamless and engaging user experience, with a variety of sounds and challenging gameplay that keeps users coming back for more.
 
 - [Play the Game](https://listen-up-five.vercel.app/)
 - [Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
