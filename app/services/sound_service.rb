@@ -3,7 +3,7 @@
 class SoundService
   def self.conn
     url = 'https://freesound.org'
-    response = Faraday.new(url: url) do |f|
+    Faraday.new(url: url) do |f|
       f.params['token'] = ENV['FREE_SOUND_KEY']
     end
   end

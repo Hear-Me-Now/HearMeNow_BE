@@ -4,7 +4,7 @@ class Deck < ApplicationRecord
   validates_presence_of :category
   has_many :deck_cards, dependent: :destroy
   has_many :sound_cards, through: :deck_cards
-  after_create :get_cards
+  after_create :add_sound_cards
 
   def return_sound_card
     return if sound_cards.empty?
@@ -18,9 +18,8 @@ class Deck < ApplicationRecord
     deck_cards.first.destroy
   end
 
-  def get_cards
-    scs = initial_sound_cards
-    scs.each do |sc|
+  def add_sound_cards
+    initial_sound_cards.each do |sc|
       DeckCard.create(sound_card_id: sc.id, deck_id: id)
     end
   end
