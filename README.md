@@ -3,6 +3,7 @@
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 ## Table of Contents
 - [About Listen Up](#about-listen-up)
+- [Deployed Sites](#deployed-sites)
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Tech Stack](#tech-stack)
@@ -20,8 +21,8 @@ Once the deck is created, the front end can request sounds from the deck until i
 
 Overall, our backend provides a seamless and engaging user experience, with a variety of sounds and challenging gameplay that keeps users coming back for more.
 
+## Deployed Sites
 - [Play the Game](https://listen-up-five.vercel.app/)
-- [Live Backend API](https://listen-up-be.herokuapp.com/graphql) 
 - [Graph*i*QL Playground](https://listen-up-be.herokuapp.com/graphiql)
 
 ## Learning Goals
