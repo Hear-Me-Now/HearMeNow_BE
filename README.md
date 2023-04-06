@@ -1,4 +1,4 @@
-# Listen Up Backend Service
+# ![download (1)](https://user-images.githubusercontent.com/54966635/230452738-383669cf-a958-4120-b56a-19c3f7568229.png)Listen Up Backend Service
 ![Github CI](https://github.com/Listen-Up-2210/listen_up_be/actions/workflows/rubyonrails.yml/badge.svg)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 ## Table of Contents
