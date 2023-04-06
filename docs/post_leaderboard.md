@@ -1,10 +1,10 @@
 # Create a new leaderboard entry
-This is the mutation that would be called at the end of a game to post a users score to a leaderboard. Required arguments include 
-This request requires an argument of category options for category include: 
-- animals
-- instruments
-- machines
-- misc
+This is the mutation that would be called at the end of a game to post a users score to a leaderboard. Required arguments include:
+- name
+- score
+- category
+- difficulty
+
 ## Request Body
 Mutation
 ```
