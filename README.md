@@ -1,6 +1,8 @@
 # ![download (1)](https://user-images.githubusercontent.com/54966635/230452738-383669cf-a958-4120-b56a-19c3f7568229.png)Listen Up Backend Service
 ![Github CI](https://github.com/Listen-Up-2210/listen_up_be/actions/workflows/rubyonrails.yml/badge.svg)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+![listen-up-preview](https://user-images.githubusercontent.com/54966635/230459929-d9dd0ce7-f162-452f-856f-f2a0c30e19b6.gif)
+
 ## Table of Contents
 - [About Listen Up](#about-listen-up)
 - [Deployed Sites](#deployed-sites)
