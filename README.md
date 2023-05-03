@@ -25,7 +25,7 @@ Once the deck is created, the front end can request sounds from the deck until i
 Overall, our backend provides a seamless and engaging user experience, with a variety of sounds and challenging gameplay that keeps users coming back for more.
 
 ## Deployed Sites
-- [Play the Game](https://listen-up-five.vercel.app/)
+- [Play the Game](https://listenup-game.herokuapp.com/)
 - [Graph*i*QL Playground](https://listen-up-be.herokuapp.com/graphiql)
 
 ## Learning Goals
