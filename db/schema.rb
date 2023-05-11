@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -27,6 +25,7 @@ ActiveRecord::Schema.define(version: 20_230_331_210_914) do
 
   create_table 'decks', force: :cascade do |t|
     t.string 'category'
+    t.string 'difficulty'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end
@@ -43,6 +42,7 @@ ActiveRecord::Schema.define(version: 20_230_331_210_914) do
   create_table 'sound_cards', force: :cascade do |t|
     t.string 'correct_answer'
     t.string 'category'
+    t.string 'difficulty'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end

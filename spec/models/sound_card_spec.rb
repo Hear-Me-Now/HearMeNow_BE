@@ -6,6 +6,7 @@ RSpec.describe SoundCard do
   describe 'validations' do
     it { should validate_presence_of :correct_answer }
     it { should validate_presence_of :category }
+    it { should validate_presence_of :difficulty }
   end
 
   describe 'associations' do
@@ -16,7 +17,7 @@ RSpec.describe SoundCard do
 
   describe '#capitalize_answer' do
     it 'capitalizes the answer of the sound card' do
-      sc = SoundCard.create!(correct_answer: 'big bird', category: 'Animals')
+      sc = SoundCard.create!(correct_answer: 'big bird', category: 'Animals', difficulty: 'hard')
 
       expect(sc.correct_answer).to eq('Big Bird')
     end

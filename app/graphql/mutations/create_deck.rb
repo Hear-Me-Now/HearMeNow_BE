@@ -3,12 +3,13 @@
 module Mutations
   class CreateDeck < Mutations::BaseMutation
     argument :category, String, required: true
+    argument :difficulty, String, required: true
 
     field :deck, Types::DeckType
     field :errors, [String], null: false
 
-    def resolve(category:)
-      deck = Deck.new(category: category)
+    def resolve(category:, difficulty:)
+      deck = Deck.new(category: category, difficulty: difficulty)
       if deck.save
         if deck.sound_cards.count.positive?
           {
@@ -19,7 +20,7 @@ module Mutations
           deck.destroy
           {
             deck: nil,
-            errors: ["There are no sound cards for category #{category}"]
+            errors: ["There are no sound cards for category #{category} with difficulty #{difficulty}"]
           }
         end
       else
