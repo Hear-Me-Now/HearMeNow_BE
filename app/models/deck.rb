@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Deck < ApplicationRecord
-  validates_presence_of :category
+  validates_presence_of :category, :difficulty
   has_many :deck_cards, dependent: :destroy
   has_many :sound_cards, through: :deck_cards
   after_create :add_sound_cards
@@ -25,6 +25,6 @@ class Deck < ApplicationRecord
   end
 
   def initial_sound_cards
-    SoundCard.where('lower(category) ILIKE ?', "%#{category.downcase}%").shuffle.sample(8)
+    SoundCard.where('lower(category) ILIKE ?', "%#{category.downcase}%").where('lower(difficulty) ILIKE ?', "%#{difficulty.downcase}").shuffle.sample(8)
   end
 end
