@@ -5,7 +5,7 @@ class SoundCard < ApplicationRecord
   has_many :deck_cards, dependent: :destroy
   has_many :decks, through: :deck_cards
 
-  validates_presence_of :correct_answer, :category
+  validates_presence_of :correct_answer, :category, :difficulty
 
   before_validation :capitalize_answer
 
