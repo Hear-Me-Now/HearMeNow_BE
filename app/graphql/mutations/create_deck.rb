@@ -9,7 +9,7 @@ module Mutations
     field :errors, [String], null: false
 
     def resolve(category:, difficulty:)
-      deck = Deck.new(category: category)
+      deck = Deck.new(category: category, difficulty: difficulty)
       if deck.save
         if deck.sound_cards.count.positive?
           {
@@ -20,7 +20,7 @@ module Mutations
           deck.destroy
           {
             deck: nil,
-            errors: ["There are no sound cards for category #{category}"]
+            errors: ["There are no sound cards for category #{category} with difficulty #{difficulty}"]
           }
         end
       else

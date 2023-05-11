@@ -31,7 +31,7 @@ RSpec.describe 'deck mutation', type: :request do
     it 'returns a deck with no cards if category does not exist' do
       errors = decks_mutation('accents', 'hard').dig('createDeck', 'errors')
 
-      expect(errors.first).to eq('There are no sound cards for category accents')
+      expect(errors.first).to eq('There are no sound cards for category accents with difficulty hard')
       expect(Deck.last).to be nil
     end
 
