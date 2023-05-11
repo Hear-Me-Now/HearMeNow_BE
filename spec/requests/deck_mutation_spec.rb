@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe 'deck mutation', type: :request do
   it 'adds a deck entry to the database' do
-    mutation_response = decks_mutation('Animals')
+    mutation_response = decks_mutation('Animals', 'easy')
     deck = mutation_response['createDeck']['deck']
     errors = mutation_response['createDeck']['errors']
     new_deck = Deck.last
@@ -17,7 +17,7 @@ RSpec.describe 'deck mutation', type: :request do
 
   describe 'deck edge cases' do
     it 'returns a deck with correct categories case insensitively' do
-      mutation_response = decks_mutation('iNsTrumENTS')
+      mutation_response = decks_mutation('iNsTrumENTS', 'easy')
       new_deck = Deck.last
 
       expect(new_deck.category).to eq('iNsTrumENTS')
@@ -29,7 +29,7 @@ RSpec.describe 'deck mutation', type: :request do
 
   describe 'deck sad paths' do
     it 'returns a deck with no cards if category does not exist' do
-      errors = decks_mutation('accents').dig('createDeck', 'errors')
+      errors = decks_mutation('accents', 'hard').dig('createDeck', 'errors')
 
       expect(errors.first).to eq('There are no sound cards for category accents')
       expect(Deck.last).to be nil
@@ -56,11 +56,12 @@ RSpec.describe 'deck mutation', type: :request do
 
   private
 
-  def decks_mutation(category)
+  def decks_mutation(category, difficulty)
     response = gql <<-GQL
       mutation createDeck{
         createDeck(input: {
-          category: "#{category}"
+          category: "#{category}",
+          difficulty: "#{difficulty}"
         }) {
           deck {
             id

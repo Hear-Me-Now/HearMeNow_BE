@@ -49,7 +49,7 @@ RSpec.describe 'Sound Card Requests', type: :request do
     end
   end
 
-  describe 'Sound Card Queries' do
+  describe 'Sound card edge cases' do
     it 'returns a unique error if api limit is reached' do
       allow(SoundService).to receive(:get_sound_data).and_return({})
       deck_id = Deck.create!(category: 'Misc').id
