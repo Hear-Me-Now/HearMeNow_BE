@@ -8,9 +8,10 @@ This request requires an argument of category options for category include:
 ## Request Body
 Mutation
 ```
-mutation createDeck($category: String!){
+mutation createDeck($category: String!, $difficulty: String!){
     createDeck(input: {
-        category: $category
+        category: $category,
+        difficulty: $difficulty
     })
     {
         deck {
@@ -22,7 +23,8 @@ mutation createDeck($category: String!){
 Variables
 ```
 {
-    "category": "misc"
+    "category": "misc",
+    "difficulty": "easy"
 }
 ```
 ## Response Body
