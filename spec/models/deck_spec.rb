@@ -5,6 +5,7 @@ require 'rails_helper'
 RSpec.describe Deck do
   describe 'validations' do
     it { should validate_presence_of :category }
+    it { should validate_presence_of :difficulty }
   end
 
   describe 'associations' do
@@ -13,21 +14,23 @@ RSpec.describe Deck do
   end
 
   describe 'get_cards' do
-    it 'should create 8 deckcards of the correct category' do
+    it 'should create 8 deckcards of the correct category and difficulty' do
       deck = Deck.create!(category: 'Animals', difficulty: 'easy')
 
       expect(deck.sound_cards.count).to eq(8)
       deck.sound_cards.each do |sc|
         expect(sc.category).to eq('Animals')
+        expect(sc.difficulty).to eq('easy')
       end
     end
 
-    it 'should create 8 deckcards of the correct category' do
+    it 'should create 8 deckcards of the correct category and difficulty' do
       deck = Deck.create!(category: 'misc', difficulty: 'medium')
 
       expect(deck.sound_cards.count).to eq(8)
       deck.sound_cards.each do |sc|
         expect(sc.category.include?('Misc')).to eq true
+        expect(sc.difficulty).to eq('medium')
       end
     end
   end
@@ -42,6 +45,7 @@ RSpec.describe Deck do
 
       expect(sound_card).to be_a SoundCard
       expect(sound_card.category).to eq('Instruments')
+      expect(sound_card.difficulty).to eq('medium')
       expect(deck.sound_cards.count).to eq(7)
 
       deck.return_sound_card
