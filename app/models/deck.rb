@@ -25,6 +25,7 @@ class Deck < ApplicationRecord
   end
 
   def initial_sound_cards
-    SoundCard.where('lower(category) ILIKE ?', "%#{category.downcase}%").where('lower(difficulty) ILIKE ?', "%#{difficulty.downcase}").shuffle.sample(8)
+    SoundCard.where('lower(category) ILIKE ?', "%#{category.downcase}%").where('lower(difficulty) ILIKE ?',
+                                                                               "%#{difficulty.downcase}").shuffle.sample(8)
   end
 end

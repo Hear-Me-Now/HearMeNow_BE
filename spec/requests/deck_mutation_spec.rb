@@ -71,7 +71,7 @@ RSpec.describe 'deck mutation', type: :request do
         }
       GQL
       errors = response['errors']
-        
+
       expect(errors.count).to eq(1)
       expect(errors.first['message']).to eq("Argument 'difficulty' on InputObject 'CreateDeckInput' is required. Expected type String!")
       expect(Deck.last).to be nil
