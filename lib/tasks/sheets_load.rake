@@ -6,7 +6,7 @@ namespace :sheets_load do
     SoundCard.destroy_all
     sound_card_data = SheetFacade.get_sheet('Sound%20Cards')
     sound_card_data.each do |sc|
-      SoundCard.create!({ category: sc[0], id: sc[1], correct_answer: sc[2] })
+      SoundCard.create!({ category: sc[0], id: sc[1], correct_answer: sc[2], difficulty: sc[3] })
     end
     ActiveRecord::Base.connection.reset_pk_sequence!('sound_cards')
   end
