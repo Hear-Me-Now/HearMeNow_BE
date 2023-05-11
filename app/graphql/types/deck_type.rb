@@ -4,6 +4,7 @@ module Types
   class DeckType < Types::BaseObject
     field :id, ID, null: false
     field :category, String
+    field :difficulty, String
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end
