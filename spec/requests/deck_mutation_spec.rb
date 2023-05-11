@@ -10,6 +10,7 @@ RSpec.describe 'deck mutation', type: :request do
     new_deck = Deck.last
 
     expect(new_deck.category).to eq('Animals')
+    expect(new_deck.difficulty).to eq('easy')
     expect(deck['id']).to eq(new_deck.id.to_s)
     expect(errors).to eq([])
     expect(new_deck.sound_cards.count).to eq(8)
@@ -23,6 +24,7 @@ RSpec.describe 'deck mutation', type: :request do
       expect(new_deck.category).to eq('iNsTrumENTS')
       new_deck.sound_cards.each do |sc|
         expect(sc.category).to eq('Instruments')
+        expect(sc.difficulty).to eq('easy')
       end
     end
   end
@@ -39,6 +41,7 @@ RSpec.describe 'deck mutation', type: :request do
       response = gql <<-GQL
         mutation createDeck{
           createDeck(input: {
+            difficulty: "easy"
           }) {
             deck {
               id
@@ -49,7 +52,48 @@ RSpec.describe 'deck mutation', type: :request do
       GQL
       errors = response['errors']
 
+      expect(errors.count).to eq(1)
       expect(errors.first['message']).to eq("Argument 'category' on InputObject 'CreateDeckInput' is required. Expected type String!")
+      expect(Deck.last).to be nil
+    end
+
+    it 'returns an error if no difficulty is given' do
+      response = gql <<-GQL
+        mutation createDeck{
+          createDeck(input: {
+            category: "Animals"
+          }) {
+            deck {
+              id
+            }
+            errors
+          }
+        }
+      GQL
+      errors = response['errors']
+        
+      expect(errors.count).to eq(1)
+      expect(errors.first['message']).to eq("Argument 'difficulty' on InputObject 'CreateDeckInput' is required. Expected type String!")
+      expect(Deck.last).to be nil
+    end
+
+    it 'returns an error if no difficulty and no category is given' do
+      response = gql <<-GQL
+        mutation createDeck{
+          createDeck(input: {
+          }) {
+            deck {
+              id
+            }
+            errors
+          }
+        }
+      GQL
+      errors = response['errors']
+
+      expect(errors.count).to eq(2)
+      expect(errors.first['message']).to eq("Argument 'category' on InputObject 'CreateDeckInput' is required. Expected type String!")
+      expect(errors.second['message']).to eq("Argument 'difficulty' on InputObject 'CreateDeckInput' is required. Expected type String!")
       expect(Deck.last).to be nil
     end
   end
