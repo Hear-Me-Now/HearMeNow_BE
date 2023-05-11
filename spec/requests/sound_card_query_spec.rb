@@ -9,7 +9,7 @@ RSpec.describe 'Sound Card Requests', type: :request do
     end
 
     it 'returns asound card in the correct category for the given deck id', :vcr do
-      deck_id = Deck.create!(category: 'Animals').id
+      deck_id = Deck.create!(category: 'Animals', difficulty: 'easy').id
       response = query_sound_cards_by_deck_id(deck_id)
       sound_card = response.dig('data', 'soundCard')
 
@@ -21,7 +21,7 @@ RSpec.describe 'Sound Card Requests', type: :request do
 
     describe 'Sound Card Sad Paths' do
       it 'returns an error if deck is out of cards', :vcr do
-        deck_id = Deck.create!(category: 'Animals').id
+        deck_id = Deck.create!(category: 'Animals', difficulty: 'Easy').id
         8.times do
           query_sound_cards_by_deck_id(deck_id)
         end
@@ -33,7 +33,7 @@ RSpec.describe 'Sound Card Requests', type: :request do
       end
 
       it 'returns an error if given deck id does not exist', :vcr do
-        Deck.create!(category: 'Misc')
+        Deck.create!(category: 'Misc', difficulty: 'Easy')
         deck_id = Deck.maximum(:id) + 1
 
         response = query_sound_cards_by_deck_id(deck_id)
@@ -52,7 +52,7 @@ RSpec.describe 'Sound Card Requests', type: :request do
   describe 'Sound card edge cases' do
     it 'returns a unique error if api limit is reached' do
       allow(SoundService).to receive(:get_sound_data).and_return({})
-      deck_id = Deck.create!(category: 'Misc').id
+      deck_id = Deck.create!(category: 'Misc', difficulty: 'easy').id
 
       response = query_sound_cards_by_deck_id(deck_id)
       errors = response['errors']

@@ -14,7 +14,7 @@ RSpec.describe Deck do
 
   describe 'get_cards' do
     it 'should create 8 deckcards of the correct category' do
-      deck = Deck.create!(category: 'Animals')
+      deck = Deck.create!(category: 'Animals', difficulty: 'easy')
 
       expect(deck.sound_cards.count).to eq(8)
       deck.sound_cards.each do |sc|
@@ -23,7 +23,7 @@ RSpec.describe Deck do
     end
 
     it 'should create 8 deckcards of the correct category' do
-      deck = Deck.create!(category: 'misc')
+      deck = Deck.create!(category: 'misc', difficulty: 'medium')
 
       expect(deck.sound_cards.count).to eq(8)
       deck.sound_cards.each do |sc|
@@ -34,7 +34,7 @@ RSpec.describe Deck do
 
   describe 'return_sound_card' do
     it 'returns a soundcard and deletes the corresponding deck card' do
-      deck = Deck.create!(category: 'Instruments')
+      deck = Deck.create!(category: 'Instruments', difficulty: 'medium')
 
       expect(deck.sound_cards.count).to eq(8)
 

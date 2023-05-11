@@ -16,7 +16,7 @@ RSpec.describe SoundCard do
 
   describe '#capitalize_answer' do
     it 'capitalizes the answer of the sound card' do
-      sc = SoundCard.create!(correct_answer: 'big bird', category: 'Animals')
+      sc = SoundCard.create!(correct_answer: 'big bird', category: 'Animals', difficulty: 'hard')
 
       expect(sc.correct_answer).to eq('Big Bird')
     end
